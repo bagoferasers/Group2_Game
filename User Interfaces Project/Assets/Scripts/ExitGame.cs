@@ -8,11 +8,19 @@ using UnityEngine.SceneManagement;
 /// </summary>
 /// <remarks>
 /// Authors: Colby Bailey
-/// Date: September 10, 2023
+/// Date: September 11, 2023
 /// </remarks>
 public class ExitGame : MonoBehaviour
 {
     private bool isPressed = false;
+    private MenuFader menuFader;
+    private CanvasGroup fadeCanvas;
+
+    void Start( )
+    {
+        menuFader = GameObject.Find( "Fade" ).GetComponent< MenuFader >( );
+        fadeCanvas = menuFader.GetComponent< CanvasGroup >( );
+    }
 
     /// <summary>
     /// Checks for an "esc" key press and exits the game when pressed. 
@@ -24,7 +32,7 @@ public class ExitGame : MonoBehaviour
     /// </remarks>
     void Update( )
     {
-        if ( Input.GetKey( "escape" ) && ( isPressed == false ) )
+        if ( Input.GetKey( "escape" ) && ( !isPressed ) )
         {
             isPressed = true;
             Debug.Log( "Exiting game!" );
@@ -42,11 +50,54 @@ public class ExitGame : MonoBehaviour
     /// </remarks>
     public void ExitNow( )
     {
-        if ( isPressed == false )
+        CheckNullReferences( );
+
+        if ( !isPressed && fadeCanvas.alpha == 0 )
         {
             isPressed = true;
-            Debug.Log( "Exiting game!" );
-            Application.Quit( );
+            try
+            {
+                // Call hideCanvas method from MenuFader script to
+                // fade before quitting.
+                menuFader.hideCanvas( menuFader.time );
+
+                // Wait for alpha of CanvasGroup to be 1
+                StartCoroutine( WaitAndQuit( ) );
+            }            
+            catch( System.Exception e )
+            {
+                Debug.LogError( "An error occurred: " + e.Message );
+                Application.Quit( );            
+            }
         }
+    }
+
+    /// <summary>
+    /// Waits for alpha of CanvasGroup to be 1 before exiting game.
+    /// </summary>
+    private IEnumerator WaitAndQuit( )
+    {
+        while( fadeCanvas.alpha < 0.95f )
+        {
+            yield return null;
+        }
+        Debug.Log( "Exiting game!" );
+        Application.Quit( );            
+        yield return null;
+    }
+
+    /// <summary>
+    /// Checks for null references and throws an exception if null.
+    /// </summary>
+    /// <exception cref="System.NullReferenceException">
+    /// Thrown when the variable is null.
+    /// </exception>
+    void CheckNullReferences( )
+    {
+        if( menuFader == null )
+            throw new System.NullReferenceException( "menuFader in ExitGame script is null" );
+        
+        if( fadeCanvas == null )
+            throw new System.NullReferenceException( "fadeCanvas in ExitGame script is null" );
     }
 }
