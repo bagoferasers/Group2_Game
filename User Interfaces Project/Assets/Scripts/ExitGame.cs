@@ -15,11 +15,18 @@ public class ExitGame : MonoBehaviour
     private bool isPressed = false;
     private MenuFader menuFader;
     private CanvasGroup fadeCanvas;
+    private GameObject g;
 
     void Start( )
     {
-        menuFader = GameObject.Find( "Fade" ).GetComponent< MenuFader >( );
+        g = GameObject.Find( "Fade" );
+        CheckNullGameObject( );
+
+        menuFader = g.GetComponent< MenuFader >( );
+        CheckNullMenuFader( );
+
         fadeCanvas = menuFader.GetComponent< CanvasGroup >( );
+        CheckNullFadeCanvas( );
     }
 
     /// <summary>
@@ -32,11 +39,23 @@ public class ExitGame : MonoBehaviour
     /// </remarks>
     void Update( )
     {
-        if ( Input.GetKey( "escape" ) && ( !isPressed ) )
+        if ( Input.GetKey( "escape" ) && ( !isPressed ) && fadeCanvas.alpha == 0 )
         {
             isPressed = true;
-            Debug.Log( "Exiting game!" );
-            Application.Quit( );
+            try
+            {
+                // Call hideCanvas method from MenuFader script to
+                // fade before quitting.
+                menuFader.hideCanvas( menuFader.time );
+
+                // Wait for alpha of CanvasGroup to be 1
+                StartCoroutine( WaitAndQuit( ) );
+            }            
+            catch( System.Exception e )
+            {
+                Debug.LogError( "An error occurred: " + e.Message );
+                Application.Quit( );            
+            }
         }
     }
 
@@ -50,8 +69,6 @@ public class ExitGame : MonoBehaviour
     /// </remarks>
     public void ExitNow( )
     {
-        CheckNullReferences( );
-
         if ( !isPressed && fadeCanvas.alpha == 0 )
         {
             isPressed = true;
@@ -87,17 +104,38 @@ public class ExitGame : MonoBehaviour
     }
 
     /// <summary>
-    /// Checks for null references and throws an exception if null.
+    /// Checks for null reference and throws an exception if null.
     /// </summary>
     /// <exception cref="System.NullReferenceException">
     /// Thrown when the variable is null.
     /// </exception>
-    void CheckNullReferences( )
+    void CheckNullMenuFader( )
     {
         if( menuFader == null )
             throw new System.NullReferenceException( "menuFader in ExitGame script is null" );
-        
+    }
+
+    /// <summary>
+    /// Checks for null reference and throws an exception if null.
+    /// </summary>
+    /// <exception cref="System.NullReferenceException">
+    /// Thrown when the variable is null.
+    /// </exception>
+    void CheckNullFadeCanvas( )
+    {
         if( fadeCanvas == null )
             throw new System.NullReferenceException( "fadeCanvas in ExitGame script is null" );
+    }
+
+    /// <summary>
+    /// Checks for null reference and throws an exception if null.
+    /// </summary>
+    /// <exception cref="System.NullReferenceException">
+    /// Thrown when the variable is null.
+    /// </exception>
+    void CheckNullGameObject( )
+    {
+        if( g == null )
+            throw new System.NullReferenceException( "g in ExitGame script is null" );
     }
 }

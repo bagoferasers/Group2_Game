@@ -38,6 +38,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BackDrop
+    uniqueID: 89575479
+    locked: 0
   - name: Background
     uniqueID: 3110616417
     locked: 0
