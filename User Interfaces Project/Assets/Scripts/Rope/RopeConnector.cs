@@ -1,9 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-//Script based on https://www.youtube.com/watch?v=olEC8mSezjk&t=367s&ab_channel=juul1a
-//TODO: Fix bug where dettaching from a rope can cause a desync between touching flag, OnTriggerExit event, and last touched ropeSegment; which can teleport the player unexpectedly
+/// <summary>
+/// Component script which allows an object to be attached to a rope
+/// </summary>
+/// <remarks>
+/// Authors: Ben Samuel
+/// Date: September 11, 2023
+/// Script based on https://www.youtube.com/watch?v=olEC8mSezjk&t=367s&ab_channel=juul1a
+/// TODO: Fix bug where dettaching from a rope can cause a desync between touching flag, OnTriggerExit event, and last touched ropeSegment; which can teleport the player unexpectedly
+/// </remarks>
 public class RopeConnector : MonoBehaviour
 {
     [SerializeField] Rigidbody2D body;
@@ -19,6 +25,12 @@ public class RopeConnector : MonoBehaviour
 
 
 
+    /// <summary>
+    /// Attaches the player to the rope segment they are touching
+    /// </summary>
+    /// <returns>
+    /// A boolean value representing whether the player was attached or not
+    /// </returns>
     public bool Attach(){
         if(!touching || isAttached){
             return false;
@@ -31,7 +43,12 @@ public class RopeConnector : MonoBehaviour
 
         return true;
     }
-
+    /// <summary>
+    /// Dettaches the player from the rope segment they are touching
+    /// </summary>
+    /// <returns>
+    /// A boolean value representing whether the player was dettached or not
+    /// </returns>
     public bool Dettach(){
         if(!isAttached){
             return false;
@@ -44,7 +61,10 @@ public class RopeConnector : MonoBehaviour
 
         return true;
     }
-
+    /// <summary>
+    /// Delays the detachment by a small amount of time
+    /// This was done to prevent certain bugs, but may be unecessary
+    /// </summary>
     void DelayedDettach(){
         StartCoroutine(DelayedDettachRoutine());
 
@@ -59,16 +79,24 @@ public class RopeConnector : MonoBehaviour
 
 
 
+    /// <summary>
+    /// Moves the player up 1 rope segment
+    /// </summary>
     public void Ascend(){
         GameObject newSegment = joint.connectedBody.gameObject.GetComponent<RopeSegment>().GetAbove();
         ChangeConnection(newSegment);
     }
-
+    /// <summary>
+    /// Moves the player down 1 rope segment
+    /// </summary>
     public void Descend(){
         GameObject newSegment = joint.connectedBody.gameObject.GetComponent<RopeSegment>().GetBelow();
         ChangeConnection(newSegment);
     }
-
+    /// <summary>
+    /// Helper function to move the player to a new rope segment
+    /// </summary>
+    /// <param name="newSegment"></param>
     void ChangeConnection(GameObject newSegment){
         if(newSegment != null){
             transform.position = newSegment.transform.position;
@@ -78,13 +106,20 @@ public class RopeConnector : MonoBehaviour
 
 
 
+    /// <summary>
+    /// Checks for collision with a rope trigger hitbox
+    /// </summary>
+    /// <param name="other"></param>
     void OnTriggerEnter2D(Collider2D other){
         if(other.gameObject.tag == "Rope"){
             ropeSegment = other.gameObject;
             touching = true;
         }
     }
-
+    /// <summary>
+    /// Checks for collision with a rope trigger hitbox ending
+    /// </summary>
+    /// <param name="other"></param>
     void OnTriggerExit2D(Collider2D other){
         if(other.gameObject.tag == "Rope"){
             touching = false;
@@ -93,6 +128,12 @@ public class RopeConnector : MonoBehaviour
 
 
 
+    /// <summary>
+    /// Getter for the isAttached flag
+    /// </summary>
+    /// <returns>
+    /// A boolean value representing whether the player is attached to a rope or not
+    /// </returns>
     public bool GetIsAttached(){
         return isAttached;
     }

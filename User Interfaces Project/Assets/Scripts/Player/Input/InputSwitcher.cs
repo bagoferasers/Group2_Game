@@ -1,7 +1,13 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
-
+/// <summary>
+/// Controls the player InputAction maps
+/// </summary>
+/// <remarks>
+/// Authors: Ben Samuel
+/// Date: September 11, 2023
+/// </remarks>
 public class InputSwitcher : MonoBehaviour
 {
     [SerializeField] PlayerConfig playerConfig;
@@ -14,6 +20,10 @@ public class InputSwitcher : MonoBehaviour
 
 
 
+    /// <summary>
+    /// Switches the active map to the new map
+    /// </summary>
+    /// <param name="type"></param>
     public void SwitchInput(InputTypes type){
         InputActionMap newMap;
         InputActionMap oldMap = playerConfig.input.currentActionMap;
@@ -33,7 +43,11 @@ public class InputSwitcher : MonoBehaviour
         newMap = playerConfig.input.currentActionMap;
         DisposeActionMap(oldMap, newMap);
     }
-
+    /// <summary>
+    /// Disables the old map and enables the new map
+    /// </summary>
+    /// <param name="oldMap"></param>
+    /// <param name="newMap"></param>
     void DisposeActionMap(InputActionMap oldMap, InputActionMap newMap){
         StartCoroutine(DisposeRoutine());
 

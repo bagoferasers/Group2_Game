@@ -2,7 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-
+/// <summary>
+/// Container class for all player component references and script settings
+/// </summary>
+/// <remarks>
+/// Authors: Ben Samuel
+/// Date: September 11, 2023
+/// </remarks>
 public class PlayerConfig : MonoBehaviour
 {
     [Header("Movement Scripts")]
