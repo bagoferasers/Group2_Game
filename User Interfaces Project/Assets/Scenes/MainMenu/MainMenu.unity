@@ -194,8 +194,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0027999878, y: -0.0021499991, z: 0}
-    m_Extent: {x: 1.5044, y: 1.50425, z: 0}
+    m_Center: {x: 0.000100016594, y: 0.002750039, z: 0}
+    m_Extent: {x: 1.4977, y: 1.50395, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -522,8 +522,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.004450023, y: 0.0023499727, z: 0}
-    m_Extent: {x: 1.5000501, y: 1.50035, z: 0}
+    m_Center: {x: 0.002849996, y: -0.0014500022, z: 0}
+    m_Extent: {x: 1.50225, y: 1.50355, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1205,8 +1205,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0036999583, y: 0.00055003166, z: 0}
-    m_Extent: {x: 1.5046, y: 1.49965, z: 0}
+    m_Center: {x: -0.0024999976, y: -0.0012999773, z: 0}
+    m_Extent: {x: 1.4965999, y: 1.5063, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -17110,8 +17110,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0038499832, y: -0.0023500323, z: 0}
-    m_Extent: {x: 1.50395, y: 1.5064499, z: 0}
+    m_Center: {x: 0.000100016594, y: 0.007950008, z: 0}
+    m_Extent: {x: 1.4977, y: 1.4986501, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -22748,8 +22748,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0055000186, y: 0.005499959, z: 0}
-    m_Extent: {x: 1.5039, y: 1.4999, z: 0}
+    m_Center: {x: -0.001150012, y: -0.00515002, z: 0}
+    m_Extent: {x: 1.50845, y: 1.5037501, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -28282,8 +28282,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0064499974, y: 0.002450049, z: 0}
-    m_Extent: {x: 1.50285, y: 1.5000501, z: 0}
+    m_Center: {x: -0.0014999509, y: 0.0015999675, z: 0}
+    m_Extent: {x: 1.4961, y: 1.4981, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -28696,7 +28696,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.254, y: 0.3}
+  m_AnchoredPosition: {x: -0.297, y: 0.3}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!199 &1602833993
@@ -29343,7 +29343,7 @@ ParticleSystem:
         m_RotationOrder: 4
     randomizeRotationDirection: 0
     gravitySource: 0
-    maxNumParticles: 100
+    maxNumParticles: 150
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -29609,7 +29609,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 20
+      scalar: 30
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -29662,7 +29662,7 @@ ParticleSystem:
     rateOverDistance:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 20
+      scalar: 30
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -32746,7 +32746,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.42000002, g: 0.42000002, b: 0.6, a: 0.019607844}
+      maxColor: {r: 0.42000002, g: 0.42000002, b: 0.6, a: 0.03137255}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -32864,7 +32864,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 0.4}
+      maxColor: {r: 1, g: 1, b: 1, a: 0.5019608}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
