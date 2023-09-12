@@ -223,10 +223,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
-    y: 0.06717364
-    width: 1
-    height: 0.8654943
+    x: 0.5375
+    y: 0
+    width: 0.31574076
+    height: 0.31574073
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
@@ -392,7 +392,6 @@ GameObject:
   - component: {fileID: 808516512}
   - component: {fileID: 808516511}
   - component: {fileID: 808516510}
-  - component: {fileID: 808516509}
   - component: {fileID: 808516508}
   m_Layer: 0
   m_Name: Player
@@ -422,21 +421,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!111 &808516509
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 808516507}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 69035e020498514469cb501edaf13755, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!212 &808516510
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -561,7 +545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.029636879, g: 0.047278527, b: 0.16981131, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
