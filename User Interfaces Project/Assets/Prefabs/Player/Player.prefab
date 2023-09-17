@@ -20,9 +20,10 @@ GameObject:
   - component: {fileID: 1244516295026924960}
   - component: {fileID: 6060558259378814246}
   - component: {fileID: 4982111690049412733}
+  - component: {fileID: 885451524771717195}
   m_Layer: 7
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58,7 +59,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 1
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -156,6 +157,7 @@ MonoBehaviour:
   landMovement: {fileID: 8935134641516458770}
   ropeMovement: {fileID: 1244516295026924960}
   waterMovement: {fileID: 6060558259378814246}
+  weaponManager: {fileID: 885451524771717195}
   inputSwitcher: {fileID: 972615364911174135}
   input: {fileID: 7136507759438533078}
   ropeConnector: {fileID: 4982111690049412733}
@@ -172,6 +174,20 @@ MonoBehaviour:
   upDelay: 0.3
   downDelay: 0.15
   swingForce: 5
+  swimForce: 5
+  brakeForce: 1.1
+  turnSpeed: 50
+  boostMultiplier: 1.5
+  strafeForce: 2
+  strafeTurnMultipler: 3
+  strafeCooldown: 0.5
+  velocityDecay: 20
+  health: 100
+  weapons:
+  - {fileID: 11400000, guid: 52d3f8d5db66b02429c3f0813b7325e1, type: 2}
+  - {fileID: 11400000, guid: 4e468fc5bebd23149ba8010c53e62a88, type: 2}
+  - {fileID: 11400000, guid: 1cafa66f57c3edf40ad07bbae75688b2, type: 2}
+  activeWeapon: {fileID: 11400000, guid: 52d3f8d5db66b02429c3f0813b7325e1, type: 2}
 --- !u!114 &7136507759438533078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -345,7 +361,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4250710263034521211}
         m_TargetAssemblyTypeName: InputHandler, Assembly-CSharp
-        m_MethodName: onWaterDash
+        m_MethodName: onWaterStrafe
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -377,7 +393,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4250710263034521211}
         m_TargetAssemblyTypeName: InputHandler, Assembly-CSharp
-        m_MethodName: onRopeDrop
+        m_MethodName: onWaterRotate
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -387,8 +403,152 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: a8333fec-05b9-4f49-9e5b-6ccfe6eab6ea
-    m_ActionName: Rope/Drop[/Keyboard/c]
+    m_ActionId: 2aa8bfba-a589-42ce-8299-9ed7fd1cf25c
+    m_ActionName: Water/Look[/Mouse/position]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4250710263034521211}
+        m_TargetAssemblyTypeName: InputHandler, Assembly-CSharp
+        m_MethodName: onAim
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 0db90a96-a758-4f73-a895-2e1a58ccb408
+    m_ActionName: Land/Aim[/Mouse/position]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4250710263034521211}
+        m_TargetAssemblyTypeName: InputHandler, Assembly-CSharp
+        m_MethodName: onShoot
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: b7cc17eb-36b3-4073-86c0-88d54cfb27a5
+    m_ActionName: Land/Shoot[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4250710263034521211}
+        m_TargetAssemblyTypeName: InputHandler, Assembly-CSharp
+        m_MethodName: onSwitchWeapon
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 1085560d-b94f-44a7-9c79-abd7e2422aa3
+    m_ActionName: Land/SwitchWeapon[/Mouse/scroll/y]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4250710263034521211}
+        m_TargetAssemblyTypeName: InputHandler, Assembly-CSharp
+        m_MethodName: onSwitchWeapon
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: bcf13f01-8b4e-430d-afcd-9cbbba961e67
+    m_ActionName: Rope/SwitchWeapon[/Mouse/scroll/y]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4250710263034521211}
+        m_TargetAssemblyTypeName: InputHandler, Assembly-CSharp
+        m_MethodName: onShoot
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 7629d808-6653-403c-87b3-655a1bb9f0b0
+    m_ActionName: Rope/Shoot[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4250710263034521211}
+        m_TargetAssemblyTypeName: InputHandler, Assembly-CSharp
+        m_MethodName: onAim
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: c494dce7-cd92-4ab6-87aa-6028a3ffc6de
+    m_ActionName: Rope/Aim[/Mouse/position]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4250710263034521211}
+        m_TargetAssemblyTypeName: InputHandler, Assembly-CSharp
+        m_MethodName: onSwitchWeapon
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: aa4530b8-fe35-4d6a-b892-a8baf33ee401
+    m_ActionName: Water/SwitchWeapon[/Mouse/scroll/y]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4250710263034521211}
+        m_TargetAssemblyTypeName: InputHandler, Assembly-CSharp
+        m_MethodName: onShoot
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 46d84622-8cf7-4f00-baed-2d03d2fdcf99
+    m_ActionName: Water/Shoot[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4250710263034521211}
+        m_TargetAssemblyTypeName: InputHandler, Assembly-CSharp
+        m_MethodName: onAim
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 244de1f6-a330-4727-82b6-80523e9b224d
+    m_ActionName: Water/Aim[/Mouse/position]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: MouseAndKeyboard
   m_DefaultActionMap: Land
@@ -473,6 +633,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 1679172579116369684}
   joint: {fileID: 8892759466996076177}
+--- !u!114 &885451524771717195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17255934530745514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b4dac8e90df31742aab1c6b1df25560, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerConfig: {fileID: 1379496807244748424}
 --- !u!1 &1520081803762526841
 GameObject:
   m_ObjectHideFlags: 0

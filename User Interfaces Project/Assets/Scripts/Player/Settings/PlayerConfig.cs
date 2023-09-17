@@ -9,12 +9,15 @@ using UnityEngine.InputSystem;
 /// Authors: Ben Samuel
 /// Date: September 11, 2023
 /// </remarks>
-public class PlayerConfig : MonoBehaviour
+public class PlayerConfig : EntityConfig
 {
     [Header("Movement Scripts")]
     public LandMovement landMovement;
     public RopeMovement ropeMovement;
     public WaterMovement waterMovement;
+
+    [Header("Weapon Scripts")]
+    public WeaponManager weaponManager;
 
     [Header("Input Scripts")]
     public InputSwitcher inputSwitcher;

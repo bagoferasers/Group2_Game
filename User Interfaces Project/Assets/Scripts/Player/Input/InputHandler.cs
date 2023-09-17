@@ -131,4 +131,22 @@ public class InputHandler : MonoBehaviour
             playerConfig.waterMovement.Strafe(context.ReadValue<float>());
         }
     }
+
+    public void onAim(InputAction.CallbackContext context){
+        if (context.performed){
+            playerConfig.weaponManager.Aim(context.ReadValue<Vector2>());
+        }
+    }
+
+    public void onSwitchWeapon(InputAction.CallbackContext context){
+        if (context.performed){
+            playerConfig.weaponManager.SwitchWeapon((int) context.ReadValue<float>());
+        }
+    }
+
+    public void onShoot(InputAction.CallbackContext context){
+        if (context.performed){
+            playerConfig.weaponManager.Shoot();
+        }
+    }
 }

@@ -71,6 +71,33 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Aim"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""0db90a96-a758-4f73-a895-2e1a58ccb408"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Shoot"",
+                    ""type"": ""Button"",
+                    ""id"": ""b7cc17eb-36b3-4073-86c0-88d54cfb27a5"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SwitchWeapon"",
+                    ""type"": ""Value"",
+                    ""id"": ""1085560d-b94f-44a7-9c79-abd7e2422aa3"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -150,6 +177,39 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""action"": ""Climb"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c3ef03f1-a721-4e98-9f5f-85e1e85b7788"",
+                    ""path"": ""<Mouse>/position"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Aim"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""cd03ee01-1233-4723-9352-fe2a28cae755"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Shoot"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""367013a3-9036-4f22-ad18-ec614a046484"",
+                    ""path"": ""<Mouse>/scroll/y"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SwitchWeapon"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -165,6 +225,33 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""SwitchWeapon"",
+                    ""type"": ""Value"",
+                    ""id"": ""bcf13f01-8b4e-430d-afcd-9cbbba961e67"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Shoot"",
+                    ""type"": ""Button"",
+                    ""id"": ""7629d808-6653-403c-87b3-655a1bb9f0b0"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Aim"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""c494dce7-cd92-4ab6-87aa-6028a3ffc6de"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 },
                 {
                     ""name"": ""Jump"",
@@ -262,6 +349,39 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ea98f0a7-db26-4422-a022-21dd4e17c07e"",
+                    ""path"": ""<Mouse>/position"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Aim"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d03654e9-08c5-4c23-a24e-cf69fedf8529"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Shoot"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1127caab-d518-44b1-8637-f8395b79056d"",
+                    ""path"": ""<Mouse>/scroll/y"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SwitchWeapon"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -277,6 +397,33 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""SwitchWeapon"",
+                    ""type"": ""Value"",
+                    ""id"": ""aa4530b8-fe35-4d6a-b892-a8baf33ee401"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Shoot"",
+                    ""type"": ""Button"",
+                    ""id"": ""46d84622-8cf7-4f00-baed-2d03d2fdcf99"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Aim"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""244de1f6-a330-4727-82b6-80523e9b224d"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 },
                 {
                     ""name"": ""Rotate"",
@@ -416,6 +563,39 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""action"": ""Rotate"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""213da42b-f990-43da-b450-13836203b5d8"",
+                    ""path"": ""<Mouse>/position"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Aim"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c60256f2-af22-4f2c-8b2b-8caecc67b3be"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Shoot"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""45f8cf72-0664-49cb-a6a0-d990c105ed21"",
+                    ""path"": ""<Mouse>/scroll/y"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SwitchWeapon"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -446,14 +626,23 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         m_Land_Dash = m_Land.FindAction("Dash", throwIfNotFound: true);
         m_Land_Sprint = m_Land.FindAction("Sprint", throwIfNotFound: true);
         m_Land_Climb = m_Land.FindAction("Climb", throwIfNotFound: true);
+        m_Land_Aim = m_Land.FindAction("Aim", throwIfNotFound: true);
+        m_Land_Shoot = m_Land.FindAction("Shoot", throwIfNotFound: true);
+        m_Land_SwitchWeapon = m_Land.FindAction("SwitchWeapon", throwIfNotFound: true);
         // Rope
         m_Rope = asset.FindActionMap("Rope", throwIfNotFound: true);
         m_Rope_Swing = m_Rope.FindAction("Swing", throwIfNotFound: true);
+        m_Rope_SwitchWeapon = m_Rope.FindAction("SwitchWeapon", throwIfNotFound: true);
+        m_Rope_Shoot = m_Rope.FindAction("Shoot", throwIfNotFound: true);
+        m_Rope_Aim = m_Rope.FindAction("Aim", throwIfNotFound: true);
         m_Rope_Jump = m_Rope.FindAction("Jump", throwIfNotFound: true);
         m_Rope_Climb = m_Rope.FindAction("Climb", throwIfNotFound: true);
         // Water
         m_Water = asset.FindActionMap("Water", throwIfNotFound: true);
         m_Water_Movement = m_Water.FindAction("Movement", throwIfNotFound: true);
+        m_Water_SwitchWeapon = m_Water.FindAction("SwitchWeapon", throwIfNotFound: true);
+        m_Water_Shoot = m_Water.FindAction("Shoot", throwIfNotFound: true);
+        m_Water_Aim = m_Water.FindAction("Aim", throwIfNotFound: true);
         m_Water_Rotate = m_Water.FindAction("Rotate", throwIfNotFound: true);
         m_Water_Strafe = m_Water.FindAction("Strafe", throwIfNotFound: true);
         m_Water_Boost = m_Water.FindAction("Boost", throwIfNotFound: true);
@@ -523,6 +712,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Land_Dash;
     private readonly InputAction m_Land_Sprint;
     private readonly InputAction m_Land_Climb;
+    private readonly InputAction m_Land_Aim;
+    private readonly InputAction m_Land_Shoot;
+    private readonly InputAction m_Land_SwitchWeapon;
     public struct LandActions
     {
         private @Controls m_Wrapper;
@@ -532,6 +724,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         public InputAction @Dash => m_Wrapper.m_Land_Dash;
         public InputAction @Sprint => m_Wrapper.m_Land_Sprint;
         public InputAction @Climb => m_Wrapper.m_Land_Climb;
+        public InputAction @Aim => m_Wrapper.m_Land_Aim;
+        public InputAction @Shoot => m_Wrapper.m_Land_Shoot;
+        public InputAction @SwitchWeapon => m_Wrapper.m_Land_SwitchWeapon;
         public InputActionMap Get() { return m_Wrapper.m_Land; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -556,6 +751,15 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @Climb.started += instance.OnClimb;
             @Climb.performed += instance.OnClimb;
             @Climb.canceled += instance.OnClimb;
+            @Aim.started += instance.OnAim;
+            @Aim.performed += instance.OnAim;
+            @Aim.canceled += instance.OnAim;
+            @Shoot.started += instance.OnShoot;
+            @Shoot.performed += instance.OnShoot;
+            @Shoot.canceled += instance.OnShoot;
+            @SwitchWeapon.started += instance.OnSwitchWeapon;
+            @SwitchWeapon.performed += instance.OnSwitchWeapon;
+            @SwitchWeapon.canceled += instance.OnSwitchWeapon;
         }
 
         private void UnregisterCallbacks(ILandActions instance)
@@ -575,6 +779,15 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @Climb.started -= instance.OnClimb;
             @Climb.performed -= instance.OnClimb;
             @Climb.canceled -= instance.OnClimb;
+            @Aim.started -= instance.OnAim;
+            @Aim.performed -= instance.OnAim;
+            @Aim.canceled -= instance.OnAim;
+            @Shoot.started -= instance.OnShoot;
+            @Shoot.performed -= instance.OnShoot;
+            @Shoot.canceled -= instance.OnShoot;
+            @SwitchWeapon.started -= instance.OnSwitchWeapon;
+            @SwitchWeapon.performed -= instance.OnSwitchWeapon;
+            @SwitchWeapon.canceled -= instance.OnSwitchWeapon;
         }
 
         public void RemoveCallbacks(ILandActions instance)
@@ -597,6 +810,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Rope;
     private List<IRopeActions> m_RopeActionsCallbackInterfaces = new List<IRopeActions>();
     private readonly InputAction m_Rope_Swing;
+    private readonly InputAction m_Rope_SwitchWeapon;
+    private readonly InputAction m_Rope_Shoot;
+    private readonly InputAction m_Rope_Aim;
     private readonly InputAction m_Rope_Jump;
     private readonly InputAction m_Rope_Climb;
     public struct RopeActions
@@ -604,6 +820,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         private @Controls m_Wrapper;
         public RopeActions(@Controls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Swing => m_Wrapper.m_Rope_Swing;
+        public InputAction @SwitchWeapon => m_Wrapper.m_Rope_SwitchWeapon;
+        public InputAction @Shoot => m_Wrapper.m_Rope_Shoot;
+        public InputAction @Aim => m_Wrapper.m_Rope_Aim;
         public InputAction @Jump => m_Wrapper.m_Rope_Jump;
         public InputAction @Climb => m_Wrapper.m_Rope_Climb;
         public InputActionMap Get() { return m_Wrapper.m_Rope; }
@@ -618,6 +837,15 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @Swing.started += instance.OnSwing;
             @Swing.performed += instance.OnSwing;
             @Swing.canceled += instance.OnSwing;
+            @SwitchWeapon.started += instance.OnSwitchWeapon;
+            @SwitchWeapon.performed += instance.OnSwitchWeapon;
+            @SwitchWeapon.canceled += instance.OnSwitchWeapon;
+            @Shoot.started += instance.OnShoot;
+            @Shoot.performed += instance.OnShoot;
+            @Shoot.canceled += instance.OnShoot;
+            @Aim.started += instance.OnAim;
+            @Aim.performed += instance.OnAim;
+            @Aim.canceled += instance.OnAim;
             @Jump.started += instance.OnJump;
             @Jump.performed += instance.OnJump;
             @Jump.canceled += instance.OnJump;
@@ -631,6 +859,15 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @Swing.started -= instance.OnSwing;
             @Swing.performed -= instance.OnSwing;
             @Swing.canceled -= instance.OnSwing;
+            @SwitchWeapon.started -= instance.OnSwitchWeapon;
+            @SwitchWeapon.performed -= instance.OnSwitchWeapon;
+            @SwitchWeapon.canceled -= instance.OnSwitchWeapon;
+            @Shoot.started -= instance.OnShoot;
+            @Shoot.performed -= instance.OnShoot;
+            @Shoot.canceled -= instance.OnShoot;
+            @Aim.started -= instance.OnAim;
+            @Aim.performed -= instance.OnAim;
+            @Aim.canceled -= instance.OnAim;
             @Jump.started -= instance.OnJump;
             @Jump.performed -= instance.OnJump;
             @Jump.canceled -= instance.OnJump;
@@ -659,6 +896,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Water;
     private List<IWaterActions> m_WaterActionsCallbackInterfaces = new List<IWaterActions>();
     private readonly InputAction m_Water_Movement;
+    private readonly InputAction m_Water_SwitchWeapon;
+    private readonly InputAction m_Water_Shoot;
+    private readonly InputAction m_Water_Aim;
     private readonly InputAction m_Water_Rotate;
     private readonly InputAction m_Water_Strafe;
     private readonly InputAction m_Water_Boost;
@@ -667,6 +907,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         private @Controls m_Wrapper;
         public WaterActions(@Controls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_Water_Movement;
+        public InputAction @SwitchWeapon => m_Wrapper.m_Water_SwitchWeapon;
+        public InputAction @Shoot => m_Wrapper.m_Water_Shoot;
+        public InputAction @Aim => m_Wrapper.m_Water_Aim;
         public InputAction @Rotate => m_Wrapper.m_Water_Rotate;
         public InputAction @Strafe => m_Wrapper.m_Water_Strafe;
         public InputAction @Boost => m_Wrapper.m_Water_Boost;
@@ -682,6 +925,15 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @Movement.started += instance.OnMovement;
             @Movement.performed += instance.OnMovement;
             @Movement.canceled += instance.OnMovement;
+            @SwitchWeapon.started += instance.OnSwitchWeapon;
+            @SwitchWeapon.performed += instance.OnSwitchWeapon;
+            @SwitchWeapon.canceled += instance.OnSwitchWeapon;
+            @Shoot.started += instance.OnShoot;
+            @Shoot.performed += instance.OnShoot;
+            @Shoot.canceled += instance.OnShoot;
+            @Aim.started += instance.OnAim;
+            @Aim.performed += instance.OnAim;
+            @Aim.canceled += instance.OnAim;
             @Rotate.started += instance.OnRotate;
             @Rotate.performed += instance.OnRotate;
             @Rotate.canceled += instance.OnRotate;
@@ -698,6 +950,15 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @Movement.started -= instance.OnMovement;
             @Movement.performed -= instance.OnMovement;
             @Movement.canceled -= instance.OnMovement;
+            @SwitchWeapon.started -= instance.OnSwitchWeapon;
+            @SwitchWeapon.performed -= instance.OnSwitchWeapon;
+            @SwitchWeapon.canceled -= instance.OnSwitchWeapon;
+            @Shoot.started -= instance.OnShoot;
+            @Shoot.performed -= instance.OnShoot;
+            @Shoot.canceled -= instance.OnShoot;
+            @Aim.started -= instance.OnAim;
+            @Aim.performed -= instance.OnAim;
+            @Aim.canceled -= instance.OnAim;
             @Rotate.started -= instance.OnRotate;
             @Rotate.performed -= instance.OnRotate;
             @Rotate.canceled -= instance.OnRotate;
@@ -740,16 +1001,25 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         void OnDash(InputAction.CallbackContext context);
         void OnSprint(InputAction.CallbackContext context);
         void OnClimb(InputAction.CallbackContext context);
+        void OnAim(InputAction.CallbackContext context);
+        void OnShoot(InputAction.CallbackContext context);
+        void OnSwitchWeapon(InputAction.CallbackContext context);
     }
     public interface IRopeActions
     {
         void OnSwing(InputAction.CallbackContext context);
+        void OnSwitchWeapon(InputAction.CallbackContext context);
+        void OnShoot(InputAction.CallbackContext context);
+        void OnAim(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnClimb(InputAction.CallbackContext context);
     }
     public interface IWaterActions
     {
         void OnMovement(InputAction.CallbackContext context);
+        void OnSwitchWeapon(InputAction.CallbackContext context);
+        void OnShoot(InputAction.CallbackContext context);
+        void OnAim(InputAction.CallbackContext context);
         void OnRotate(InputAction.CallbackContext context);
         void OnStrafe(InputAction.CallbackContext context);
         void OnBoost(InputAction.CallbackContext context);

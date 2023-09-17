@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75bcd7a98d986604c95fdd2d1bc25b68, type: 3}
+  m_Name: TestBeam
+  m_EditorClassIdentifier: 
+  playerConfig: {fileID: 0}
+  damage: 10
+  fireRate: 50
+  lifeSpan: 1
+  projectile: {fileID: 6436580387722523062, guid: 8a28a588a6f4241478445bff574e457f, type: 3}
+  range: 100

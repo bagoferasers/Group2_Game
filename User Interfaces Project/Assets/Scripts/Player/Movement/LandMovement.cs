@@ -25,7 +25,7 @@ public class LandMovement : MonoBehaviour
     /// </summary>
     void FixedUpdate(){
         isGrounded = Physics2D.OverlapCircle(playerConfig.groundCheck.position, groundCheckRadius, playerConfig.layerMask);
-
+        
         Move();
     }
 
