@@ -23,7 +23,7 @@ public class MenuFader : MonoBehaviour
     }
 
     [ Header( "Insert fade time:" ) ]
-    public float time = 4.0f;
+    public float time = 15.0f;
 
     void Start( )
     {
@@ -56,11 +56,12 @@ public class MenuFader : MonoBehaviour
     /// <param name="fadeTime">The duration of the fade-in effect.</param>
     IEnumerator fadeIn( float fadeTime )
     {
-        while( Canvas.alpha > 0 )
+        while( Canvas.alpha > 0.2f )
         {
             Canvas.alpha -= fadeTime * ( Time.fixedDeltaTime / 2 );
             yield return null;
         }
+        Canvas.alpha = 0;
         Canvas.interactable = false;
         yield return null;
     } 
@@ -71,11 +72,12 @@ public class MenuFader : MonoBehaviour
     /// <param name="fadeTime">The duration of the fade-out effect.</param>
     IEnumerator fadeOut( float fadeTime )
     {
-        while( Canvas.alpha < 1 )
+        while( Canvas.alpha < 0.8f )
         {
             Canvas.alpha += fadeTime * ( Time.fixedDeltaTime / 2 );
             yield return null;
         }
+        Canvas.alpha = 1;
         Canvas.interactable = false;
         yield return null;
     }
