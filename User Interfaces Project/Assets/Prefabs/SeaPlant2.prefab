@@ -10,8 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7626487985185335210}
   - component: {fileID: 8563311184850969560}
-  - component: {fileID: 148052657991183265}
-  - component: {fileID: 1243537429165838190}
   m_Layer: 0
   m_Name: SeaPlant2
   m_TagString: Untagged
@@ -74,9 +72,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1184350879
   m_SortingLayer: -1
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 1840498493, guid: 8774e54a2eef55c46a2515647c383d8a, type: 3}
-  m_Color: {r: 0, g: 0.3207547, b: 0.06528705, a: 1}
+  m_Color: {r: 0.08690815, g: 0.2924528, b: 0.12911819, a: 0.8509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -86,36 +84,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &148052657991183265
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2785218850116031046}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 533ea7ec99157c84cbef6e18a9eb9940, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1243537429165838190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2785218850116031046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2afa9c595aa97b14eb1ae05efd7230c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
