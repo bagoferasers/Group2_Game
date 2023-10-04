@@ -240,8 +240,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.00034999847, y: -0.00085002184, z: 0}
-    m_Extent: {x: 1.50655, y: 1.50055, z: 0}
+    m_Center: {x: -0.0052500367, y: 0.0044499636, z: 0}
+    m_Extent: {x: 1.50085, y: 1.50175, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -337,8 +337,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0051499605, y: -0.0051499605, z: 0}
-    m_Extent: {x: 1.50325, y: 1.50455, z: 0}
+    m_Center: {x: 0.005400002, y: -0.001850009, z: 0}
+    m_Extent: {x: 1.5007, y: 1.50135, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1400,8 +1400,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.006250024, y: -0.004700005, z: 0}
-    m_Extent: {x: 1.50055, y: 1.5034001, z: 0}
+    m_Center: {x: -0.0033000112, y: -0.0012000203, z: 0}
+    m_Extent: {x: 1.4972999, y: 1.5047, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -11387,10 +11387,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.12885663
+    x: 0.469147
     y: 0
-    width: 0.7420851
-    height: 0.99999994
+    width: 0.2782819
+    height: 0.37499997
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -11625,8 +11625,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0048999786, y: 0.0018999577, z: 0}
-    m_Extent: {x: 1.5035, y: 1.505, z: 0}
+    m_Center: {x: 0.005800009, y: 0.0022999644, z: 0}
+    m_Extent: {x: 1.5014, y: 1.5076001, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -17097,14 +17097,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2137169260}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.37, y: 0.178, z: 0}
   m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1894710106}
   m_Father: {fileID: 2126181014}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2137169262
 MonoBehaviour:
   m_ObjectHideFlags: 0
