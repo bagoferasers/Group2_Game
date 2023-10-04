@@ -7,8 +7,8 @@ using UnityEngine.SceneManagement;
 /// Provides functionality to transition from scene to scene.
 /// </summary>
 /// <remarks>
-/// Authors: Bryan Alvarado
-/// Date: September 9, 2023
+/// Authors: Bryan Alvarado, Colby Bailey
+/// Date: September 25, 2023
 /// </remarks>
 
 
@@ -29,7 +29,8 @@ public class SceneTransition : MonoBehaviour
         if (!isPressed)
         {
             isPressed = true;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene( "1.1" );
         }
     }
 
@@ -45,7 +46,8 @@ public class SceneTransition : MonoBehaviour
         if (!isPressed)
         {
             isPressed = true;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene( "1.1" );
         }
     }
 
