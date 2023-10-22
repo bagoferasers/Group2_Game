@@ -10,19 +10,17 @@ using UnityEngine;
 /// </remarks>
 public class PlayerInputs : MonoBehaviour
 {
-    [Header("Object Assignments")]
-    [SerializeField] PlayerMovement playerMovement;
-    [SerializeField] BulletShoot bulletShoot;
+    [SerializeField] PlayerSettings settings;
 
     
     /// <summary>
     /// Handles physics updates
     /// </summary>
     void FixedUpdate(){
-        playerMovement.Move(GetHorizontal(), GetVertical());
+        settings.playerMovement.Move(GetHorizontal(), GetVertical());
 
         if(Input.GetKey(KeyCode.Mouse0)){
-            bulletShoot.Shoot(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+            settings.bulletShoot.Shoot(Camera.main.ScreenToWorldPoint(Input.mousePosition));
         }
     }
     /// <summary>

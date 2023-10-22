@@ -10,12 +10,7 @@ using UnityEngine;
 /// </remarks>
 public class PlayerBreath : MonoBehaviour
 {
-    [Header("Object Assignments")]
-    [SerializeField] EntityManager entityManager;
-    [Header("Breath Settings")]
-    [SerializeField] float breathSeconds = 180f;
-    [SerializeField] int drownDamage = 5;
-    [SerializeField] float drownRate = 1f;
+    [SerializeField] PlayerSettings settings;
 
     bool underwater = true;
     float currentBreath;
@@ -26,7 +21,7 @@ public class PlayerBreath : MonoBehaviour
     /// Handles variable initialization
     /// </summary>
     void Start(){
-        currentBreath = breathSeconds;
+        currentBreath = settings.breathSeconds;
     }
     /// <summary>
     /// Decreases breath meter and damages player over time
@@ -49,9 +44,9 @@ public class PlayerBreath : MonoBehaviour
     /// Helper function to damage player over time
     /// </summary>
     void Drown(){
-        if(Time.time > lastDrownTick + drownRate){
-            entityManager.Hit(drownDamage);
-            lastDrownTick = Time.time + drownRate;
+        if(Time.time > lastDrownTick + settings.drownRate){
+            settings.entityManager.Hit(settings.drownDamage);
+            lastDrownTick = Time.time + settings.drownRate;
         }
     }
 }

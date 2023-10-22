@@ -10,11 +10,7 @@ using UnityEngine;
 /// </remarks>
 public class PlayerMovement : MonoBehaviour
 {
-    [Header("Object Assignments")]
-    [SerializeField] Rigidbody2D body;
-    [SerializeField] Transform sprite;
-    [Header("Movement Settings")]
-    [SerializeField] float speed = 5f;
+    [SerializeField] PlayerSettings settings;
 
     Vector2 direction;
 
@@ -26,19 +22,19 @@ public class PlayerMovement : MonoBehaviour
     /// <param name="y">Vertical direction to move in</param>
     public void Move(int x, int y){
         if(x == 0 && y == 0){
-            body.velocity = Vector2.zero;
+            settings.body.velocity = Vector2.zero;
             return;
         }
 
         direction = new Vector2(x, y);
         SetRotation();
-        body.velocity = direction * speed * Time.deltaTime;
+        settings.body.velocity = direction * settings.speed * Time.deltaTime;
     }
     /// <summary>
     /// Sets the player's rotation based on the direction of input
     /// </summary>
     public void SetRotation(){
         float angle = Vector2.SignedAngle(transform.up, direction);
-        sprite.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+        settings.sprite.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
     }
 }
