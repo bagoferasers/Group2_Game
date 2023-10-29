@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light2D: {fileID: 5915116250478586840}
-  time: 15
+  time: 5
   lightIntensity: 10
 --- !u!70 &4984115708428026433
 CapsuleCollider2D:

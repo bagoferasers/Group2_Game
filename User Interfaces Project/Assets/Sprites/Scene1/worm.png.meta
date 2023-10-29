@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c2243b67e7054a546a2ad35e693f8f33
+guid: 911081f473b300841bd70c4703d6be82
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -149,43 +149,211 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: menurocks_0
+      name: worm_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 720
         width: 320
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.49299532, y: 0.48374227}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ecf6f948404ca7b40bcab14180ead85d
-      internalID: -1673893574
+      spriteID: d5f2fccd90ce0994a895a2bde7ebf529
+      internalID: 1483311564
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: menurocks_1
+      name: worm_1
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 720
+        width: 320
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4946661, y: 0.48234287}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b4bcadd891d4d7439147fa8ec72621f
+      internalID: -343097148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worm_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 540
+        width: 320
+        height: 180
+      alignment: 9
+      pivot: {x: 0.49403334, y: 0.48408917}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2bed26677bc51943a111dc17f0fb72d
+      internalID: 1154258749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worm_3
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 540
+        width: 320
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4931923, y: 0.4862281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9bd927c9197a8f4bac3f0b145b0ff35
+      internalID: 366679873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worm_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 320
+        height: 180
+      alignment: 9
+      pivot: {x: 0.49442983, y: 0.4947574}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c84099047cd2a9c4992db4953d741d39
+      internalID: 2122543517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worm_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 360
+        width: 320
+        height: 180
+      alignment: 9
+      pivot: {x: 0.48210716, y: 0.4807663}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08c1c37a1bd2909469c22046197dd977
+      internalID: 1158264958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worm_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 180
+        width: 320
+        height: 180
+      alignment: 9
+      pivot: {x: 0.47270933, y: 0.45017192}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcfcb334bf6170244b9e32e6e54717e3
+      internalID: -1240972658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worm_7
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 180
+        width: 320
+        height: 180
+      alignment: 9
+      pivot: {x: 0.45869523, y: 0.42394665}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45eafa1ff62633b48a29c4a4068aeef3
+      internalID: -663236421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worm_8
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 320
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4439434, y: 0.39772102}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bff2be9257e988d4395c7c99acd09c5d
+      internalID: -1063083177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worm_9
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 320
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.43435478, y: 0.36756188}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66045a797f7bc4f49b378d83325e6186
-      internalID: 1717526063
+      spriteID: 9e1acbaf175c3014b928d96c4ee01be6
+      internalID: -1423083417
       vertices: []
       indices: 
       edges: []
@@ -201,8 +369,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      menurocks_0: -1673893574
-      menurocks_1: 1717526063
+      worm_0: 1483311564
+      worm_1: -343097148
+      worm_2: 1154258749
+      worm_3: 366679873
+      worm_4: 2122543517
+      worm_5: 1158264958
+      worm_6: -1240972658
+      worm_7: -663236421
+      worm_8: -1063083177
+      worm_9: -1423083417
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

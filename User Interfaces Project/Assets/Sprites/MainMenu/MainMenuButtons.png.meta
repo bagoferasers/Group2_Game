@@ -69,10 +69,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 3
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -153,9 +153,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1080
-        width: 960
-        height: 540
+        y: 360
+        width: 320
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,10 +173,10 @@ TextureImporter:
       name: MainMenuButtons_1
       rect:
         serializedVersion: 2
-        x: 960
-        y: 1080
-        width: 960
-        height: 540
+        x: 320
+        y: 360
+        width: 320
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,10 +194,10 @@ TextureImporter:
       name: MainMenuButtons_2
       rect:
         serializedVersion: 2
-        x: 1920
-        y: 1080
-        width: 960
-        height: 540
+        x: 640
+        y: 360
+        width: 320
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,10 +215,10 @@ TextureImporter:
       name: MainMenuButtons_3
       rect:
         serializedVersion: 2
-        x: 2880
-        y: 1080
-        width: 960
-        height: 540
+        x: 960
+        y: 360
+        width: 320
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,9 +237,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 540
-        width: 960
-        height: 540
+        y: 180
+        width: 320
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,10 +257,10 @@ TextureImporter:
       name: MainMenuButtons_5
       rect:
         serializedVersion: 2
-        x: 960
-        y: 540
-        width: 960
-        height: 540
+        x: 320
+        y: 180
+        width: 320
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,10 +278,10 @@ TextureImporter:
       name: MainMenuButtons_6
       rect:
         serializedVersion: 2
-        x: 1920
-        y: 540
-        width: 960
-        height: 540
+        x: 640
+        y: 180
+        width: 320
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,10 +299,10 @@ TextureImporter:
       name: MainMenuButtons_7
       rect:
         serializedVersion: 2
-        x: 2880
-        y: 540
-        width: 960
-        height: 540
+        x: 960
+        y: 180
+        width: 320
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -322,8 +322,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 960
-        height: 540
+        width: 320
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,8 +331,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 743de91d5e5d9994591aa8f26c525a0c
-      internalID: 666128273
+      spriteID: abe707406adfa544aaed3f0542ab18e1
+      internalID: 217290162
       vertices: []
       indices: 
       edges: []
@@ -341,10 +341,10 @@ TextureImporter:
       name: MainMenuButtons_9
       rect:
         serializedVersion: 2
-        x: 960
+        x: 320
         y: 0
-        width: 960
-        height: 540
+        width: 320
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,8 +352,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22d3571c4c691164d82efc5dbc2e2389
-      internalID: 1751092900
+      spriteID: 75583bba0d32eac479c87634e351ee9f
+      internalID: -1469318154
       vertices: []
       indices: 
       edges: []
@@ -362,10 +362,10 @@ TextureImporter:
       name: MainMenuButtons_10
       rect:
         serializedVersion: 2
-        x: 1920
+        x: 640
         y: 0
-        width: 960
-        height: 540
+        width: 320
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,8 +373,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61e5caa3abf96494b8886e45657b2549
-      internalID: 537547141
+      spriteID: 23361f5b6bd16f34c9ff440569772448
+      internalID: -509730874
       vertices: []
       indices: 
       edges: []
@@ -383,10 +383,10 @@ TextureImporter:
       name: MainMenuButtons_11
       rect:
         serializedVersion: 2
-        x: 2880
+        x: 960
         y: 0
-        width: 960
-        height: 540
+        width: 320
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -394,8 +394,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14179019c55af7c4ba9b0997c49da34c
-      internalID: 1542465202
+      spriteID: 4ee74714ecd2c2b489c93bdbeb4f32cc
+      internalID: -1726859204
       vertices: []
       indices: 
       edges: []
@@ -413,16 +413,16 @@ TextureImporter:
     nameFileIdTable:
       MainMenuButtons_0: -1645170841
       MainMenuButtons_1: 296989788
-      MainMenuButtons_10: 537547141
-      MainMenuButtons_11: 1542465202
+      MainMenuButtons_10: -509730874
+      MainMenuButtons_11: -1726859204
       MainMenuButtons_2: 562441440
       MainMenuButtons_3: 1896549921
       MainMenuButtons_4: -374944371
       MainMenuButtons_5: -738748995
       MainMenuButtons_6: -121594485
       MainMenuButtons_7: -1460005718
-      MainMenuButtons_8: 666128273
-      MainMenuButtons_9: 1751092900
+      MainMenuButtons_8: 217290162
+      MainMenuButtons_9: -1469318154
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

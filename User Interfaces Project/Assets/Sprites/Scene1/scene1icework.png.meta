@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b68738159866eab4d9f418ae8c18a372
+guid: a369cba808d27d14b95a54c7a8e4f052
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 320
+  spritePixelsToUnits: 180
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -149,7 +149,70 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: back_0
+      name: scene1icework_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 180
+        width: 320
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c714a93dee937f4c96434f8b90e57ff
+      internalID: 1284123407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scene1icework_1
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 180
+        width: 320
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c667f6a37e7a7e64b9256e263c21e8a9
+      internalID: -104417993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scene1icework_2
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 180
+        width: 320
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0407247df73ed0e4d910ce591200b041
+      internalID: 628070263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scene1icework_3
       rect:
         serializedVersion: 2
         x: 0
@@ -163,14 +226,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a5a6c89203c75c409b0978e997305b7
-      internalID: -1423679951
+      spriteID: d7a172b1c12ab4f4ab1fe04b71d0a0ac
+      internalID: 249668456
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: back_1
+      name: scene1icework_4
       rect:
         serializedVersion: 2
         x: 320
@@ -184,8 +247,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f01579a8318b3ce4898fe1fe809ff8ef
-      internalID: -1857565728
+      spriteID: 1127fbef7cb53ae4387ef3fcb637456d
+      internalID: -1547306762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scene1icework_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 320
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f41d3dfe631b83541b570c7b63c217c3
+      internalID: -372737226
       vertices: []
       indices: 
       edges: []
@@ -201,8 +285,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      back_0: -1423679951
-      back_1: -1857565728
+      scene1icework_0: 1284123407
+      scene1icework_1: -104417993
+      scene1icework_2: 628070263
+      scene1icework_3: 249668456
+      scene1icework_4: -1547306762
+      scene1icework_5: -372737226
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
