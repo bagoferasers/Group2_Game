@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c2243b67e7054a546a2ad35e693f8f33
+guid: d7cac16cad119094786704134b1a87e5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -149,7 +149,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: menurocks_0
+      name: icekelp_0
       rect:
         serializedVersion: 2
         x: 0
@@ -163,14 +163,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ecf6f948404ca7b40bcab14180ead85d
-      internalID: -1673893574
+      spriteID: 3e91b69840a0980488f2230cb1ca0d69
+      internalID: 324197624
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: menurocks_1
+      name: icekelp_1
       rect:
         serializedVersion: 2
         x: 320
@@ -184,8 +184,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66045a797f7bc4f49b378d83325e6186
-      internalID: 1717526063
+      spriteID: 1ca97cd65a790ed4ca4ced35addc1175
+      internalID: -460846642
       vertices: []
       indices: 
       edges: []
@@ -201,8 +201,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      menurocks_0: -1673893574
-      menurocks_1: 1717526063
+      icekelp_0: 324197624
+      icekelp_1: -460846642
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

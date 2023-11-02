@@ -765,6 +765,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestEnemy_Stationary
       objectReference: {fileID: 0}
+    - target: {fileID: 4096499690931506094, guid: 604be3258b58a1940b78d94792206027, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5243118680652063577, guid: 604be3258b58a1940b78d94792206027, type: 3}
       propertyPath: target
       value: 
@@ -782,10 +786,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 372328197155041704, guid: d16f078a9ad23ed48b49edd9899d133e, type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 2773567381167789644, guid: d16f078a9ad23ed48b49edd9899d133e, type: 3}
       propertyPath: m_Name
       value: PlayerController

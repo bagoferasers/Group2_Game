@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fa530a196e85efc41bfbc719589415cf
+guid: d51af9d2aba2f664299a142c55268ee0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -149,11 +149,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: back button_0
+      name: crystal coral_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 180
         width: 320
         height: 180
       alignment: 0
@@ -163,18 +163,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42e5eb0fb4dc6ba4f8b4e4540131e390
-      internalID: -547494020
+      spriteID: 18a73cf4b6ab26741a8f6fef0f630c06
+      internalID: -1294533325
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: back button_1
+      name: crystal coral_1
       rect:
         serializedVersion: 2
         x: 320
-        y: 0
+        y: 180
         width: 320
         height: 180
       alignment: 0
@@ -184,8 +184,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cf71f4cc009bec48a72bbf4ae5b9233
-      internalID: -167379436
+      spriteID: 8af6d6af5227af9408a524a455daa02f
+      internalID: -1517928480
       vertices: []
       indices: 
       edges: []
@@ -201,8 +201,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      back button_0: -547494020
-      back button_1: -167379436
+      crystal coral_0: -1294533325
+      crystal coral_1: -1517928480
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
