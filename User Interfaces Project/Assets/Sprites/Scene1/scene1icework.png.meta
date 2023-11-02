@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0d78fafcb77fc5d419a8c83ec71fb212
+guid: a369cba808d27d14b95a54c7a8e4f052
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 320
+  spritePixelsToUnits: 180
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -149,91 +149,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MainMenuButtons_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 360
-        width: 320
-        height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6c0adce275b94624882a535dec506e3e
-      internalID: -1645170841
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MainMenuButtons_1
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 360
-        width: 320
-        height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b54c02b2cb2b54f428e58b56d506f495
-      internalID: 296989788
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MainMenuButtons_2
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 360
-        width: 320
-        height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 83b19e6aebc217c4e8782be50c0a30ee
-      internalID: 562441440
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MainMenuButtons_3
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 360
-        width: 320
-        height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fa20ddc980919ce4ea7483d4ce0812c6
-      internalID: 1896549921
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MainMenuButtons_4
+      name: scene1icework_0
       rect:
         serializedVersion: 2
         x: 0
@@ -247,14 +163,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2046715a4b486764bbb596c1481393a5
-      internalID: -374944371
+      spriteID: 9c714a93dee937f4c96434f8b90e57ff
+      internalID: 1284123407
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainMenuButtons_5
+      name: scene1icework_1
       rect:
         serializedVersion: 2
         x: 320
@@ -268,14 +184,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb4507ae672d2f5469b562fc3f3c3615
-      internalID: -738748995
+      spriteID: c667f6a37e7a7e64b9256e263c21e8a9
+      internalID: -104417993
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainMenuButtons_6
+      name: scene1icework_2
       rect:
         serializedVersion: 2
         x: 640
@@ -289,35 +205,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 727da93abe9a4af41a762fd6632237a2
-      internalID: -121594485
+      spriteID: 0407247df73ed0e4d910ce591200b041
+      internalID: 628070263
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainMenuButtons_7
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 180
-        width: 320
-        height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e375ba20ca732094080cfd5e0375bafe
-      internalID: -1460005718
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MainMenuButtons_8
+      name: scene1icework_3
       rect:
         serializedVersion: 2
         x: 0
@@ -331,14 +226,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abe707406adfa544aaed3f0542ab18e1
-      internalID: 217290162
+      spriteID: d7a172b1c12ab4f4ab1fe04b71d0a0ac
+      internalID: 249668456
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainMenuButtons_9
+      name: scene1icework_4
       rect:
         serializedVersion: 2
         x: 320
@@ -352,14 +247,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75583bba0d32eac479c87634e351ee9f
-      internalID: -1469318154
+      spriteID: 1127fbef7cb53ae4387ef3fcb637456d
+      internalID: -1547306762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainMenuButtons_10
+      name: scene1icework_5
       rect:
         serializedVersion: 2
         x: 640
@@ -373,29 +268,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23361f5b6bd16f34c9ff440569772448
-      internalID: -509730874
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MainMenuButtons_11
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 0
-        width: 320
-        height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ee74714ecd2c2b489c93bdbeb4f32cc
-      internalID: -1726859204
+      spriteID: f41d3dfe631b83541b570c7b63c217c3
+      internalID: -372737226
       vertices: []
       indices: 
       edges: []
@@ -411,18 +285,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      MainMenuButtons_0: -1645170841
-      MainMenuButtons_1: 296989788
-      MainMenuButtons_10: -509730874
-      MainMenuButtons_11: -1726859204
-      MainMenuButtons_2: 562441440
-      MainMenuButtons_3: 1896549921
-      MainMenuButtons_4: -374944371
-      MainMenuButtons_5: -738748995
-      MainMenuButtons_6: -121594485
-      MainMenuButtons_7: -1460005718
-      MainMenuButtons_8: 217290162
-      MainMenuButtons_9: -1469318154
+      scene1icework_0: 1284123407
+      scene1icework_1: -104417993
+      scene1icework_2: 628070263
+      scene1icework_3: 249668456
+      scene1icework_4: -1547306762
+      scene1icework_5: -372737226
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
