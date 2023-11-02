@@ -10,7 +10,7 @@ using UnityEngine;
 /// </remarks>
 public class EntityManager : MonoBehaviour
 {
-    [SerializeField] int health;
+    [SerializeField] PlayerSettings settings;
 
 
     /// <summary>
@@ -18,8 +18,8 @@ public class EntityManager : MonoBehaviour
     /// </summary>
     /// <param name="damage">Amount to reduce health by</param>
     public void Hit(int damage){
-        health -= damage;
-        if(health <= 0){
+        settings.health -= damage;
+        if(settings.health <= 0){
             Die();
         }
     }
@@ -34,6 +34,6 @@ public class EntityManager : MonoBehaviour
     /// </summary>
     /// <returns>Integer value of health</returns>
     int GetHealth(){
-        return health;
+        return settings.health;
     }
 }
