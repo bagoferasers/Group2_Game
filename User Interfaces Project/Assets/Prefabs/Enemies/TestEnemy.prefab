@@ -12,11 +12,13 @@ GameObject:
   - component: {fileID: 2230253419171442400}
   - component: {fileID: 5914852277807909350}
   - component: {fileID: 8092355908789671253}
+  - component: {fileID: 2318033444110454288}
   - component: {fileID: 1670445424332693497}
   - component: {fileID: 5243118680652063577}
   - component: {fileID: 5214156751909523477}
+  - component: {fileID: 8462005688514934915}
   m_Layer: 6
-  m_Name: TestEnemy_Stationary
+  m_Name: TestEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -161,6 +163,31 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.75, y: 0.85}
   m_EdgeRadius: 0
+--- !u!114 &2318033444110454288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4096499690931506094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b367b2c3c34bac438c458d9f8b8f02f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  body: {fileID: 5914852277807909350}
+  sprite: {fileID: 1381237915561597355}
+  entityManager: {fileID: 1670445424332693497}
+  bulletShoot: {fileID: 5214156751909523477}
+  bullet: {fileID: 2973887822767218495, guid: bcf38369f7f09474a9cd25f13c256f98, type: 3}
+  damage: 10
+  fireRate: 3
+  health: 50
+  target: {fileID: 0}
+  movement: {fileID: 8462005688514934915}
+  speed: 1
+  aggroRange: 10
+  turnSpeed: 10
 --- !u!114 &1670445424332693497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,7 +200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7737e01b2f84114587f3589f0319ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  settings: {fileID: 2318033444110454288}
 --- !u!114 &5243118680652063577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,10 +213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d3a8eeabd4dbb444a85fada30c54cb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletShoot: {fileID: 5214156751909523477}
-  target: {fileID: 0}
-  aggroRange: 10
-  turnSpeed: 90
+  settings: {fileID: 2318033444110454288}
 --- !u!114 &5214156751909523477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,7 +226,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79cdfbe7b14ef2541998acbe234735f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 1381237915561597355}
-  bullet: {fileID: 2973887822767218495, guid: bcf38369f7f09474a9cd25f13c256f98, type: 3}
-  damage: 10
-  fireRate: 3
+  settings: {fileID: 2318033444110454288}
+--- !u!114 &8462005688514934915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4096499690931506094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdc8a4a9641af7b478932ccfbfa87072, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  settings: {fileID: 2318033444110454288}

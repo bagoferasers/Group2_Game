@@ -271,7 +271,7 @@ SortingGroup:
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   m_SortingLayerID: 1164378351
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_SortAtRoot: 0
 --- !u!114 &519420035
@@ -789,6 +789,18 @@ PrefabInstance:
     - target: {fileID: 2773567381167789644, guid: d16f078a9ad23ed48b49edd9899d133e, type: 3}
       propertyPath: m_Name
       value: PlayerController
+      objectReference: {fileID: 0}
+    - target: {fileID: 6060195311955056468, guid: d16f078a9ad23ed48b49edd9899d133e, type: 3}
+      propertyPath: speed
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938260378700729443, guid: d16f078a9ad23ed48b49edd9899d133e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938260378700729443, guid: d16f078a9ad23ed48b49edd9899d133e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7938260378700729443, guid: d16f078a9ad23ed48b49edd9899d133e, type: 3}
       propertyPath: m_LocalPosition.x
