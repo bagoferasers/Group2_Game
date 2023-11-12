@@ -26,7 +26,7 @@ public class moveWorm : MonoBehaviour
         Chasing
     }
 
-    private AIState currentState = AIState.Idle;
+    private AIState currentState;
 
     void Start( )
     {
@@ -35,6 +35,7 @@ public class moveWorm : MonoBehaviour
             Debug.Log( "target is null in moveWorm.cs");
             Application.Quit( );
         }
+        currentState = AIState.Idle;
     }
     void LateUpdate( )
     {
