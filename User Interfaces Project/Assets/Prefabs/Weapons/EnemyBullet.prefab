@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0}
+  m_LocalScale: {x: 0.015, y: 0.015, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -174,5 +174,5 @@ MonoBehaviour:
   body: {fileID: 2066193914417026244}
   hitbox: {fileID: 7338512482905377820}
   damage: 10
-  speed: 0.35
+  speed: 0.015
   lifeSpan: 2
