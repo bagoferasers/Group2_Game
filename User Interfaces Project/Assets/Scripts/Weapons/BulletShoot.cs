@@ -10,7 +10,7 @@ using UnityEngine;
 /// </remarks>
 public class BulletShoot : MonoBehaviour
 {
-    [SerializeField] PlayerSettings settings;
+    [SerializeField] EntitySettings settings;
 
     float shootCooldown = 0;
 

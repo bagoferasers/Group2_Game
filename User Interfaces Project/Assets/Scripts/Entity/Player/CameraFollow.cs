@@ -47,5 +47,9 @@ public class CameraFollow : MonoBehaviour
             // Update the camera's position
             transform.position = smoothedPosition;
         }
+        else
+        {
+            Debug.Log( "Player is null!" );
+        }
     }
 }
