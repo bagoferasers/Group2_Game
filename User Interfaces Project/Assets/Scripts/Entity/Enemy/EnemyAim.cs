@@ -10,36 +10,25 @@ using UnityEngine;
 /// </remarks>
 public class EnemyAim : MonoBehaviour
 {
-    [Header("Object Assignments")]
-    [SerializeField] BulletShoot bulletShoot;
-    [SerializeField] Transform target;
-    [Header("Aiming Settings")]
-    [SerializeField] float aggroRange = 50f;
-    [SerializeField] float turnSpeed = 10f;
-
-    bool lockedOn;
+    [SerializeField] EnemySettings settings;
 
 
     /// <summary>
     /// Handles physics updates
     /// </summary>
     void FixedUpdate(){
-        Vector3 distance = transform.position - target.position;
-        if(distance.sqrMagnitude <= aggroRange * aggroRange){
+        Vector3 distance = transform.position - settings.target.position;
+        if(distance.sqrMagnitude <= settings.aggroRange * settings.aggroRange){
             LockOn();
-            bulletShoot.Shoot(target.position);
-        } else {
-            lockedOn = false;
+            settings.bulletShoot.Shoot(settings.target.position);
         }
     }
     /// <summary>
     /// Rotates the enemy towards the target
     /// </summary>
     void LockOn(){
-        lockedOn = true;
-        
-        Vector3 rotatedVectorToTarget = Quaternion.Euler(0, 0, 0) * (target.position - transform.position);
+        Vector3 rotatedVectorToTarget = Quaternion.Euler(0, 0, 0) * (settings.target.position - transform.position);
         Quaternion targetRotation = Quaternion.LookRotation(forward: Vector3.forward, upwards: rotatedVectorToTarget);
-        transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, turnSpeed * Time.deltaTime);
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, settings.turnSpeed * Time.deltaTime);
     }
 }

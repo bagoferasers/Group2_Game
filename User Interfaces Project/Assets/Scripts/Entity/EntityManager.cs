@@ -10,7 +10,7 @@ using UnityEngine;
 /// </remarks>
 public class EntityManager : MonoBehaviour
 {
-    [SerializeField] PlayerSettings settings;
+    [SerializeField] EntitySettings settings;
 
 
     /// <summary>

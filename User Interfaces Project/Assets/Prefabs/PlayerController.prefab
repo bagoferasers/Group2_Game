@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4337873906575685417}
   - component: {fileID: 9050474387782763909}
   - component: {fileID: 3552337162309226156}
+  - component: {fileID: 7627092211862817680}
   m_Layer: 0
   m_Name: PlayerController
   m_TagString: Player
@@ -30,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
+  m_LocalScale: {x: 0.02, y: 0.02, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1101636612589836994}
@@ -51,10 +52,11 @@ MonoBehaviour:
   playerMovement: {fileID: 9050474387782763909}
   bulletShoot: {fileID: 3552337162309226156}
   entityManager: {fileID: 7120526174628026839}
+  saveData: {fileID: 7627092211862817680}
   body: {fileID: 372328197155041704}
   sprite: {fileID: 1101636612589836994}
   bullet: {fileID: 2973887822767218495, guid: 37158e9930933694cb02c702de17de5b, type: 3}
-  speed: 9
+  speed: 15
   damage: 10
   fireRate: 3
   breathSeconds: 180
@@ -100,6 +102,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settings: {fileID: 6060195311955056468}
+--- !u!114 &7627092211862817680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2773567381167789644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3266578ba4ae9024ca594519910ff850, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player_health: player_health
 --- !u!1 &5260638263255306792
 GameObject:
   m_ObjectHideFlags: 0
