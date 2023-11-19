@@ -215,8 +215,8 @@ TextureImporter:
       name: scene1rockwork_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 180
+        x: 960
+        y: 360
         width: 320
         height: 180
       alignment: 0
@@ -236,7 +236,7 @@ TextureImporter:
       name: scene1rockwork_4
       rect:
         serializedVersion: 2
-        x: 320
+        x: 0
         y: 180
         width: 320
         height: 180
@@ -257,7 +257,7 @@ TextureImporter:
       name: scene1rockwork_5
       rect:
         serializedVersion: 2
-        x: 640
+        x: 320
         y: 180
         width: 320
         height: 180
@@ -278,8 +278,8 @@ TextureImporter:
       name: scene1rockwork_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 640
+        y: 180
         width: 320
         height: 180
       alignment: 0
@@ -299,8 +299,8 @@ TextureImporter:
       name: scene1rockwork_7
       rect:
         serializedVersion: 2
-        x: 320
-        y: 0
+        x: 960
+        y: 180
         width: 320
         height: 180
       alignment: 0
@@ -320,7 +320,7 @@ TextureImporter:
       name: scene1rockwork_8
       rect:
         serializedVersion: 2
-        x: 640
+        x: 0
         y: 0
         width: 320
         height: 180
@@ -333,6 +333,69 @@ TextureImporter:
       bones: []
       spriteID: 25b9efab764587c47a3e4ba95f82b768
       internalID: -1135396477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scene1rockwork_9
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 320
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af068ef34a8ff469b9d621970b80830a
+      internalID: 234472177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scene1rockwork_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 320
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 891976cc174894c7c9e3c98825dda600
+      internalID: -589244985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scene1rockwork_11
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 320
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22419c5cd404740998dc3f69988d763c
+      internalID: 1413382931
       vertices: []
       indices: 
       edges: []
@@ -350,6 +413,8 @@ TextureImporter:
     nameFileIdTable:
       scene1rockwork_0: -640139620
       scene1rockwork_1: -2135401135
+      scene1rockwork_10: -589244985
+      scene1rockwork_11: 1413382931
       scene1rockwork_2: 1436824742
       scene1rockwork_3: 1270221164
       scene1rockwork_4: 1994447835
@@ -357,6 +422,7 @@ TextureImporter:
       scene1rockwork_6: -119632549
       scene1rockwork_7: 1300453300
       scene1rockwork_8: -1135396477
+      scene1rockwork_9: 234472177
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

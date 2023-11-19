@@ -10174,7 +10174,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.3
+  m_Radius: 0.5
 --- !u!198 &4516835349713487324
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -30138,8 +30138,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0018499792, y: -0.0042999983, z: 0}
-    m_Extent: {x: 0.60185003, y: 0.5984, z: 0}
+    m_Center: {x: -0.002000004, y: -0.0054500103, z: 0}
+    m_Extent: {x: 0.60389996, y: 0.60235, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -40233,8 +40233,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0017000139, y: 0.0024999976, z: 0}
-    m_Extent: {x: 0.6004, y: 0.5984, z: 0}
+    m_Center: {x: 0.0015500188, y: -0.0014500022, z: 0}
+    m_Extent: {x: 0.60555, y: 0.60715, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
