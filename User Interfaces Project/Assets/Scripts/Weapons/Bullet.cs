@@ -14,7 +14,7 @@ public class Bullet : MonoBehaviour
     [SerializeField] Rigidbody2D body;
     [SerializeField] BoxCollider2D hitbox;
     [Header("Bullet Settings")]
-    [SerializeField] int damage;
+    [SerializeField] public int damage;
     [SerializeField] float speed;
     [SerializeField] float lifeSpan = 2f;
 
