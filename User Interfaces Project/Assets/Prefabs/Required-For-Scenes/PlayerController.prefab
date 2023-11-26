@@ -49,20 +49,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5532baf02a9ae4944907da9a73a01ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerMovement: {fileID: 9050474387782763909}
-  bulletShoot: {fileID: 3552337162309226156}
-  entityManager: {fileID: 7120526174628026839}
-  saveData: {fileID: 7627092211862817680}
   body: {fileID: 372328197155041704}
   sprite: {fileID: 1101636612589836994}
+  entityManager: {fileID: 7120526174628026839}
+  bulletShoot: {fileID: 3552337162309226156}
   bullet: {fileID: 2973887822767218495, guid: 37158e9930933694cb02c702de17de5b, type: 3}
-  speed: 15
   damage: 10
-  fireRate: 3
+  fireRate: 4
+  health: 150
+  playerMovement: {fileID: 9050474387782763909}
+  saveData: {fileID: 7627092211862817680}
+  speed: 25
   breathSeconds: 180
   drownDamage: 5
   drownRate: 1
-  health: 150
 --- !u!114 &4337873906575685417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,6 +288,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settings: {fileID: 6060195311955056468}
+  playerDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: SceneTransition, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Sandbox
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6321162596683408247
 MonoBehaviour:
   m_ObjectHideFlags: 0

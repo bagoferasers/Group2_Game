@@ -6,11 +6,13 @@ using UnityEngine;
 /// </summary>
 /// /// <remarks>
 /// Authors: Ben Samuel
-/// Date: September 29, 2023
+/// Date: November 26, 2023
 /// </remarks>
 public class EnemyAim : MonoBehaviour
 {
     [SerializeField] EnemySettings settings;
+
+    [SerializeField] LayerMask layerMask;
 
 
     /// <summary>
@@ -18,9 +20,14 @@ public class EnemyAim : MonoBehaviour
     /// </summary>
     void FixedUpdate(){
         Vector3 distance = transform.position - settings.target.position;
-        if(distance.sqrMagnitude <= settings.aggroRange * settings.aggroRange){
+        RaycastHit2D lineOfSight = Physics2D.Raycast(transform.position, transform.up, settings.aggroRange, layerMask);
+        //Debug.Log(lineOfSight.collider);
+        if(distance.sqrMagnitude <= settings.aggroRange * settings.aggroRange && lineOfSight.collider == null){
+            settings.SetLineOfSight(true);
             LockOn();
             settings.bulletShoot.Shoot(settings.target.position);
+        } else {
+            settings.SetLineOfSight(false);
         }
     }
     /// <summary>

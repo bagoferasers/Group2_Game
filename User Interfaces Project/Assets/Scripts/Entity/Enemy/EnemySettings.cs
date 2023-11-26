@@ -11,7 +11,17 @@ public class EnemySettings : EntitySettings
     [Header("Aiming Settings")]
     public float turnSpeed = 10f;
 
+    bool lineOfSight = false;
+
     void Awake(){
         target = GameObject.FindWithTag("Player").transform;
+    }
+
+    public bool GetLineOfSight(){
+        return lineOfSight;
+    }
+
+    public void SetLineOfSight(bool lineOfSight){
+        this.lineOfSight = lineOfSight;
     }
 }

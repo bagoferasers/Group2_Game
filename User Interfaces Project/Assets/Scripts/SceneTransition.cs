@@ -7,13 +7,24 @@ using UnityEngine.SceneManagement;
 /// Provides functionality to transition from scene to scene.
 /// </summary>
 /// <remarks>
-/// Authors: Bryan Alvarado, Colby Bailey
-/// Date: September 25, 2023
+/// Authors: Bryan Alvarado, Colby Bailey, Ben Samuel
+/// Date: November 26, 2023
 /// </remarks>
 
 
 public class SceneTransition : MonoBehaviour
 {
+    public static SceneTransition singleton;
+
+    void Awake()
+    {
+        if(singleton == null){
+            singleton = this;
+        } else {
+            Destroy(this.gameObject);
+        }
+    }
+
     private bool isPressed = false;
 
 
@@ -24,13 +35,13 @@ public class SceneTransition : MonoBehaviour
     /// This method changes the scene from main menu to the game whenever 
     /// the "Play" option is selected.
     /// </remarks>
-    public void Play()
+    public void Play(string scene)
     {
         if (!isPressed)
         {
             isPressed = true;
             // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            SceneManager.LoadScene( "1.1" );
+            SceneManager.LoadScene( scene );
         }
     }
 

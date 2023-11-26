@@ -32,9 +32,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 822683406920407028}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10.39, y: 0.09, z: 0}
-  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_LocalScale: {x: 0.05, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -150,7 +150,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.125}
+  m_Offset: {x: 0.0038990974, y: 0.004138559}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.28866667}
@@ -161,7 +161,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.75, y: 0.85}
+  m_Size: {x: 0.5550623, y: 0.60827714}
   m_EdgeRadius: 0
 --- !u!114 &2128279531602911110
 MonoBehaviour:
@@ -184,8 +184,8 @@ MonoBehaviour:
   fireRate: 3
   health: 50
   target: {fileID: 0}
-  aggroRange: 1
-  turnSpeed: 60
+  aggroRange: 15
+  turnSpeed: 90
 --- !u!114 &7797848258342285104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,8 +199,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settings: {fileID: 2128279531602911110}
-  gridSize: 0.5
-  speed: 0.03
+  spacingBuffer: 0.4
+  gridSize: 0.05
+  speed: 0.003
   obstacles:
     serializedVersion: 2
     m_Bits: 8
@@ -220,6 +221,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settings: {fileID: 2128279531602911110}
+  playerDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &4714549846373207913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,6 +237,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settings: {fileID: 2128279531602911110}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 1591
 --- !u!114 &5122851741920488807
 MonoBehaviour:
   m_ObjectHideFlags: 0
