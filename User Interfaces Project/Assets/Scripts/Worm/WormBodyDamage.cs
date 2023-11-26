@@ -6,12 +6,15 @@ public class WormBodyDamage : MonoBehaviour
 {
     [SerializeField] private WormStats wormStats;
     [SerializeField] private PlayerSettings settings;
+    [SerializeField] private EntityManager entityManager;
     [SerializeField] private FloatingHealthBar floatingHealthBar;
     private int health;
     void Start( )
     {
-        health = settings.health;
-        floatingHealthBar.UpdateHealthbar( health, settings.maxHealth );
+        if( settings != null )
+        {
+            floatingHealthBar.UpdateHealthbar( settings.health, settings.maxHealth );            
+        }
     }
     private void OnTriggerEnter2D( Collider2D other ) 
     {
@@ -26,8 +29,8 @@ public class WormBodyDamage : MonoBehaviour
         }
         else if( other.gameObject.name == "Player" )
         {
-            health -= 2;
-            floatingHealthBar.UpdateHealthbar( health, settings.maxHealth );
+            entityManager.Hit( 2 );
+            floatingHealthBar.UpdateHealthbar( settings.health, settings.maxHealth );
         }
     }
 }
