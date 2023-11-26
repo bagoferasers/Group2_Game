@@ -17,7 +17,6 @@ public class Bullet : MonoBehaviour
     [SerializeField] public int damage;
     [SerializeField] float speed;
     [SerializeField] float lifeSpan = 2f;
-
     Vector2 direction;
     /// <summary>
     /// Fires the bullet

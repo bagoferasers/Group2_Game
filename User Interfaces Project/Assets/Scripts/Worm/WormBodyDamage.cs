@@ -5,6 +5,14 @@ using UnityEngine;
 public class WormBodyDamage : MonoBehaviour
 {
     [SerializeField] private WormStats wormStats;
+    [SerializeField] private PlayerSettings settings;
+    [SerializeField] private FloatingHealthBar floatingHealthBar;
+    private int health;
+    void Start( )
+    {
+        health = settings.health;
+        floatingHealthBar.UpdateHealthbar( health, settings.maxHealth );
+    }
     private void OnTriggerEnter2D( Collider2D other ) 
     {
         Debug.Log( "Bullet collided with enemy!" );
@@ -15,6 +23,11 @@ public class WormBodyDamage : MonoBehaviour
             wormStats.TakeDamage( damageAmount: damage );
             if( wormStats.health <= 0 )
                 wormStats.Die( );
+        }
+        else if( other.gameObject.name == "Player" )
+        {
+            health -= 2;
+            floatingHealthBar.UpdateHealthbar( health, settings.maxHealth );
         }
     }
 }

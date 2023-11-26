@@ -11,7 +11,7 @@ using UnityEngine;
 public class BulletShoot : MonoBehaviour
 {
     [SerializeField] EntitySettings settings;
-
+    public AudioSource audioSource;
     float shootCooldown = 0;
 
 
@@ -22,6 +22,7 @@ public class BulletShoot : MonoBehaviour
     /// <param name="target">Vector3 representing the target to be shot</param>
     public void Shoot(Vector3 target){
         if(Time.time > shootCooldown){
+            audioSource.Play( );
             shootCooldown = Time.time + 1/settings.fireRate;
             Bullet _bullet = Instantiate(settings.bullet, settings.sprite.position, Quaternion.identity).GetComponent<Bullet>();
             _bullet.SetDirection(target - settings.sprite.transform.position);
