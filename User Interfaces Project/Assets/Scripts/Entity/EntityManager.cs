@@ -12,7 +12,7 @@ public class EntityManager : MonoBehaviour
 {
     [SerializeField] EntitySettings settings;
 
-
+    [SerializeField] private SceneTransition sceneTransition;
     /// <summary>
     /// Reduces entity's health
     /// </summary>
@@ -21,19 +21,20 @@ public class EntityManager : MonoBehaviour
         settings.health -= damage;
         if(settings.health <= 0){
             Die();
+            sceneTransition.Credits( );
         }
     }
     /// <summary>
     /// Kills the entity
     /// </summary>
-    void Die(){
+    public void Die(){
         Destroy(gameObject);
     }
     /// <summary>
     /// Getter for entity's health
     /// </summary>
     /// <returns>Integer value of health</returns>
-    int GetHealth(){
+    public int GetHealth(){
         return settings.health;
     }
 }
