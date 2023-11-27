@@ -24,7 +24,6 @@ public class EntityManager : MonoBehaviour
         settings.health -= damage;
         if(settings.health <= 0){
             Die();
-            sceneTransition.Credits( );
         }
     }
     /// <summary>
