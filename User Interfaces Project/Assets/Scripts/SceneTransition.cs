@@ -45,6 +45,15 @@ public class SceneTransition : MonoBehaviour
         }
     }
 
+    public void MainMenu( )
+    {
+        if( !isPressed )
+        {
+            isPressed = true;
+            SceneManager.LoadScene( "MainMenu" );
+        }
+    }
+
     /// <summary>
     /// Transitions to game from Main Menu. 
     /// </summary>

@@ -15,4 +15,5 @@ public class EntitySettings : MonoBehaviour
     public float fireRate = 3;
     [Header("Entity Settings")]
     public int health;
+    public int maxHealth;
 }

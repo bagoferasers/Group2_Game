@@ -24,6 +24,7 @@ public class EntityManager : MonoBehaviour
         settings.health -= damage;
         if(settings.health <= 0){
             Die();
+            sceneTransition.Credits( );
         }
     }
     /// <summary>
@@ -40,7 +41,7 @@ public class EntityManager : MonoBehaviour
     /// Getter for entity's health
     /// </summary>
     /// <returns>Integer value of health</returns>
-    int GetHealth(){
+    public int GetHealth(){
         return settings.health;
     }
 }
