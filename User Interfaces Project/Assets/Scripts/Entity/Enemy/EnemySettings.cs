@@ -7,7 +7,7 @@ public class EnemySettings : EntitySettings
     [Header("Object Assignments")]
     public Transform target;
     [Header("AI Settings")]
-    public int aggroRange = 1;
+    public float aggroRange = 0.5f;
     [Header("Aiming Settings")]
     public float turnSpeed = 10f;
 

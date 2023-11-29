@@ -18,7 +18,7 @@ public class WormBodyDamage : MonoBehaviour
     }
     private void OnTriggerEnter2D( Collider2D other ) 
     {
-        Debug.Log( "Bullet collided with enemy!" );
+        //Debug.Log( "Bullet collided with enemy!" );
         if( other.gameObject.name == "PlayerBullet(Clone)" )
         {
             int damage = other.gameObject.GetComponent< Bullet >( ).damage;

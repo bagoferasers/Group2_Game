@@ -16,6 +16,7 @@ public class EntityManager : MonoBehaviour
     [SerializeField] UnityEvent playerDeath;
 
 
+
     /// <summary>
     /// Reduces entity's health
     /// </summary>
