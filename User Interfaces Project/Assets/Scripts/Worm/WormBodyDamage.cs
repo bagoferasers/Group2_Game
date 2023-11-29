@@ -22,14 +22,13 @@ public class WormBodyDamage : MonoBehaviour
         if( other.gameObject.name == "PlayerBullet(Clone)" )
         {
             int damage = other.gameObject.GetComponent< Bullet >( ).damage;
-            Destroy( other.gameObject );
+            //Destroy( other.gameObject );
+            other.gameObject.SetActive(false);
             wormStats.TakeDamage( damageAmount: damage );
-            if( wormStats.health <= 0 )
-                wormStats.Die( );
         }
         else if( other.gameObject.name == "Player" )
         {
-            entityManager.Hit( 2 );
+            entityManager.Hit( 20 );
             floatingHealthBar.UpdateHealthbar( settings.health, settings.maxHealth );
         }
     }

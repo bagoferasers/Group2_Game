@@ -14,15 +14,20 @@ public class EntityManager : MonoBehaviour
     [SerializeField] EntitySettings settings;
 
     [SerializeField] UnityEvent playerDeath;
+    [SerializeField] LevelWin levelWin;
 
 
 
+    void Awake(){
+        levelWin.totalEnemies++;
+    }
     /// <summary>
     /// Reduces entity's health
     /// </summary>
     /// <param name="damage">Amount to reduce health by</param>
     public void Hit(int damage){
         settings.health -= damage;
+        settings.healthBar.UpdateHealthbar(settings.health, settings.maxHealth);
         if(settings.health <= 0){
             Die();
         }
@@ -34,6 +39,7 @@ public class EntityManager : MonoBehaviour
         if(gameObject.tag == "Player"){
             playerDeath.Invoke();
         } else {
+            levelWin.totalEnemies--;
             Destroy(gameObject);
         }
     }

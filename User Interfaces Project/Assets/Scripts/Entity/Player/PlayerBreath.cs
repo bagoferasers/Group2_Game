@@ -39,6 +39,7 @@ public class PlayerBreath : MonoBehaviour
     /// </summary>
     void DecreaseBreath(){
         currentBreath -= Time.deltaTime;
+        settings.oxygenBar.value = currentBreath / settings.breathSeconds;
     }
     /// <summary>
     /// Helper function to damage player over time

@@ -15,6 +15,7 @@ using UnityEngine.SceneManagement;
 public class SceneTransition : MonoBehaviour
 {
     public static SceneTransition singleton;
+    [SerializeField] SaveData data;
 
     void Awake()
     {
@@ -42,6 +43,15 @@ public class SceneTransition : MonoBehaviour
             isPressed = true;
             // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             SceneManager.LoadScene( scene );
+        }
+    }
+
+    public void PlayLatest()
+    {
+        if (!isPressed)
+        {
+            isPressed = true;
+            SceneManager.LoadScene("Level " + data.LoadPlayerData_int(data.levels_unlocked));
         }
     }
 

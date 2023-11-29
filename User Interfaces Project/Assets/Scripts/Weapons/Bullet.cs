@@ -38,7 +38,8 @@ public class Bullet : MonoBehaviour
                 timer += Time.deltaTime;
                 yield return null;
             }
-            Destroy(gameObject);
+            gameObject.SetActive(false);
+            //Destroy(gameObject);
             yield return null;
         }
     }
@@ -51,7 +52,8 @@ public class Bullet : MonoBehaviour
         if(entity != null){
             entity.Hit(damage);
         }
-        Destroy(gameObject);
+        gameObject.SetActive(false);
+        //Destroy(gameObject);
     }
     /// <summary>
     /// Setter for the bullet's damage
