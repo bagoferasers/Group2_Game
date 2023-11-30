@@ -12,7 +12,7 @@ public class EnemyAim : MonoBehaviour
 {
     [SerializeField] EnemySettings settings;
 
-    //[SerializeField] LayerMask layerMask;
+    [SerializeField] LayerMask layerMask;
 
 
     /// <summary>
@@ -20,15 +20,14 @@ public class EnemyAim : MonoBehaviour
     /// </summary>
     void FixedUpdate(){
         Vector3 distance = transform.position - settings.target.position;
-        //RaycastHit2D lineOfSight = Physics2D.Raycast(transform.position, transform.up, settings.aggroRange, layerMask);
-        //Debug.Log(lineOfSight.collider);
-        if(distance.sqrMagnitude <= settings.aggroRange * settings.aggroRange){ //&& lineOfSight.collider == null){
-            //settings.SetLineOfSight(true);
+        RaycastHit2D lineOfSight = Physics2D.Raycast(transform.position, transform.up, settings.aggroRange, layerMask);
+        Debug.Log(lineOfSight.collider);
+        if(distance.sqrMagnitude <= settings.aggroRange * settings.aggroRange && lineOfSight.collider == null){
+            settings.SetLineOfSight(true);
             LockOn();
             settings.bulletShoot.Shoot(settings.target.position);
-        /*} else {
+        } else {
             settings.SetLineOfSight(false);
-        */
         }
     }
     /// <summary>
