@@ -46,7 +46,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2128279531602911110, guid: 5f515aecdee6e28499a558d2b5aab07c, type: 3}
       propertyPath: aggroRange
-      value: 1.25
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7182389712881549983, guid: 5f515aecdee6e28499a558d2b5aab07c, type: 3}
       propertyPath: m_LocalPosition.x

@@ -1317,6 +1317,22 @@ PrefabInstance:
       propertyPath: levelWin
       value: 
       objectReference: {fileID: 1643001362}
+    - target: {fileID: 8771265192236829643, guid: 4f23f883fdb77a542a1b4fc7797abeb9, type: 3}
+      propertyPath: settings
+      value: 
+      objectReference: {fileID: 558606548}
+    - target: {fileID: 8771265192236829643, guid: 4f23f883fdb77a542a1b4fc7797abeb9, type: 3}
+      propertyPath: wormStats
+      value: 
+      objectReference: {fileID: 274369850}
+    - target: {fileID: 8771265192236829643, guid: 4f23f883fdb77a542a1b4fc7797abeb9, type: 3}
+      propertyPath: entityManager
+      value: 
+      objectReference: {fileID: 558606550}
+    - target: {fileID: 8771265192236829643, guid: 4f23f883fdb77a542a1b4fc7797abeb9, type: 3}
+      propertyPath: floatingHealthBar
+      value: 
+      objectReference: {fileID: 558606549}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1625,11 +1641,34 @@ PrefabInstance:
       propertyPath: levelWin
       value: 
       objectReference: {fileID: 1643001362}
+    - target: {fileID: 8559086996052092354, guid: 2afa761f38f265c439dfe2120b66e8ce, type: 3}
+      propertyPath: settings
+      value: 
+      objectReference: {fileID: 558606548}
+    - target: {fileID: 8559086996052092354, guid: 2afa761f38f265c439dfe2120b66e8ce, type: 3}
+      propertyPath: entityManager
+      value: 
+      objectReference: {fileID: 558606550}
+    - target: {fileID: 8559086996052092354, guid: 2afa761f38f265c439dfe2120b66e8ce, type: 3}
+      propertyPath: floatingHealthBar
+      value: 
+      objectReference: {fileID: 558606549}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2afa761f38f265c439dfe2120b66e8ce, type: 3}
+--- !u!114 &274369850 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7099734491931705258, guid: 2afa761f38f265c439dfe2120b66e8ce, type: 3}
+  m_PrefabInstance: {fileID: 274369849}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23bbf82142437ee479ea08e56b3ec55d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &278757493 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4025167631797415975, guid: e2389a765f62f224781ec5c537df1801, type: 3}
@@ -2709,6 +2748,39 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
+--- !u!114 &558606548 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6216898271881424348, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
+  m_PrefabInstance: {fileID: 558606547}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5532baf02a9ae4944907da9a73a01ea1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &558606549 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9019018729355336071, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
+  m_PrefabInstance: {fileID: 558606547}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 600e95c77c4d1664db482d9d87186f0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &558606550 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6957444982365610847, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
+  m_PrefabInstance: {fileID: 558606547}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7737e01b2f84114587f3589f0319ab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &562130779
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3045,6 +3117,22 @@ PrefabInstance:
       propertyPath: levelWin
       value: 
       objectReference: {fileID: 1643001362}
+    - target: {fileID: 8771265192236829643, guid: 4f23f883fdb77a542a1b4fc7797abeb9, type: 3}
+      propertyPath: settings
+      value: 
+      objectReference: {fileID: 558606548}
+    - target: {fileID: 8771265192236829643, guid: 4f23f883fdb77a542a1b4fc7797abeb9, type: 3}
+      propertyPath: wormStats
+      value: 
+      objectReference: {fileID: 274369850}
+    - target: {fileID: 8771265192236829643, guid: 4f23f883fdb77a542a1b4fc7797abeb9, type: 3}
+      propertyPath: entityManager
+      value: 
+      objectReference: {fileID: 558606550}
+    - target: {fileID: 8771265192236829643, guid: 4f23f883fdb77a542a1b4fc7797abeb9, type: 3}
+      propertyPath: floatingHealthBar
+      value: 
+      objectReference: {fileID: 558606549}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3543,6 +3631,22 @@ PrefabInstance:
       propertyPath: levelWin
       value: 
       objectReference: {fileID: 1643001362}
+    - target: {fileID: 8559086996052092354, guid: 2afa761f38f265c439dfe2120b66e8ce, type: 3}
+      propertyPath: settings
+      value: 
+      objectReference: {fileID: 558606548}
+    - target: {fileID: 8559086996052092354, guid: 2afa761f38f265c439dfe2120b66e8ce, type: 3}
+      propertyPath: wormStats
+      value: 
+      objectReference: {fileID: 274369850}
+    - target: {fileID: 8559086996052092354, guid: 2afa761f38f265c439dfe2120b66e8ce, type: 3}
+      propertyPath: entityManager
+      value: 
+      objectReference: {fileID: 558606550}
+    - target: {fileID: 8559086996052092354, guid: 2afa761f38f265c439dfe2120b66e8ce, type: 3}
+      propertyPath: floatingHealthBar
+      value: 
+      objectReference: {fileID: 558606549}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5269,6 +5373,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7351434482901344612, guid: 06515108d992e92488bbe1b18fa21067, type: 3}
+      propertyPath: settings
+      value: 
+      objectReference: {fileID: 558606548}
+    - target: {fileID: 7351434482901344612, guid: 06515108d992e92488bbe1b18fa21067, type: 3}
+      propertyPath: wormStats
+      value: 
+      objectReference: {fileID: 274369850}
+    - target: {fileID: 7351434482901344612, guid: 06515108d992e92488bbe1b18fa21067, type: 3}
+      propertyPath: entityManager
+      value: 
+      objectReference: {fileID: 558606550}
+    - target: {fileID: 7351434482901344612, guid: 06515108d992e92488bbe1b18fa21067, type: 3}
+      propertyPath: floatingHealthBar
+      value: 
+      objectReference: {fileID: 558606549}
     - target: {fileID: 8234027177210854156, guid: 06515108d992e92488bbe1b18fa21067, type: 3}
       propertyPath: levelWin
       value: 
@@ -7542,6 +7662,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7351434482901344612, guid: 06515108d992e92488bbe1b18fa21067, type: 3}
+      propertyPath: settings
+      value: 
+      objectReference: {fileID: 558606548}
+    - target: {fileID: 7351434482901344612, guid: 06515108d992e92488bbe1b18fa21067, type: 3}
+      propertyPath: wormStats
+      value: 
+      objectReference: {fileID: 274369850}
+    - target: {fileID: 7351434482901344612, guid: 06515108d992e92488bbe1b18fa21067, type: 3}
+      propertyPath: entityManager
+      value: 
+      objectReference: {fileID: 558606550}
+    - target: {fileID: 7351434482901344612, guid: 06515108d992e92488bbe1b18fa21067, type: 3}
+      propertyPath: floatingHealthBar
+      value: 
+      objectReference: {fileID: 558606549}
     - target: {fileID: 8234027177210854156, guid: 06515108d992e92488bbe1b18fa21067, type: 3}
       propertyPath: levelWin
       value: 
@@ -8170,6 +8306,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7351434482901344612, guid: 06515108d992e92488bbe1b18fa21067, type: 3}
+      propertyPath: settings
+      value: 
+      objectReference: {fileID: 558606548}
+    - target: {fileID: 7351434482901344612, guid: 06515108d992e92488bbe1b18fa21067, type: 3}
+      propertyPath: wormStats
+      value: 
+      objectReference: {fileID: 274369850}
+    - target: {fileID: 7351434482901344612, guid: 06515108d992e92488bbe1b18fa21067, type: 3}
+      propertyPath: entityManager
+      value: 
+      objectReference: {fileID: 558606550}
+    - target: {fileID: 7351434482901344612, guid: 06515108d992e92488bbe1b18fa21067, type: 3}
+      propertyPath: floatingHealthBar
+      value: 
+      objectReference: {fileID: 558606549}
     - target: {fileID: 8234027177210854156, guid: 06515108d992e92488bbe1b18fa21067, type: 3}
       propertyPath: levelWin
       value: 
@@ -8626,6 +8778,22 @@ PrefabInstance:
       propertyPath: levelWin
       value: 
       objectReference: {fileID: 1643001362}
+    - target: {fileID: 8771265192236829643, guid: 4f23f883fdb77a542a1b4fc7797abeb9, type: 3}
+      propertyPath: settings
+      value: 
+      objectReference: {fileID: 558606548}
+    - target: {fileID: 8771265192236829643, guid: 4f23f883fdb77a542a1b4fc7797abeb9, type: 3}
+      propertyPath: wormStats
+      value: 
+      objectReference: {fileID: 274369850}
+    - target: {fileID: 8771265192236829643, guid: 4f23f883fdb77a542a1b4fc7797abeb9, type: 3}
+      propertyPath: entityManager
+      value: 
+      objectReference: {fileID: 558606550}
+    - target: {fileID: 8771265192236829643, guid: 4f23f883fdb77a542a1b4fc7797abeb9, type: 3}
+      propertyPath: floatingHealthBar
+      value: 
+      objectReference: {fileID: 558606549}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11259,6 +11427,22 @@ PrefabInstance:
       propertyPath: levelWin
       value: 
       objectReference: {fileID: 1643001362}
+    - target: {fileID: 8771265192236829643, guid: 4f23f883fdb77a542a1b4fc7797abeb9, type: 3}
+      propertyPath: settings
+      value: 
+      objectReference: {fileID: 558606548}
+    - target: {fileID: 8771265192236829643, guid: 4f23f883fdb77a542a1b4fc7797abeb9, type: 3}
+      propertyPath: wormStats
+      value: 
+      objectReference: {fileID: 274369850}
+    - target: {fileID: 8771265192236829643, guid: 4f23f883fdb77a542a1b4fc7797abeb9, type: 3}
+      propertyPath: entityManager
+      value: 
+      objectReference: {fileID: 558606550}
+    - target: {fileID: 8771265192236829643, guid: 4f23f883fdb77a542a1b4fc7797abeb9, type: 3}
+      propertyPath: floatingHealthBar
+      value: 
+      objectReference: {fileID: 558606549}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

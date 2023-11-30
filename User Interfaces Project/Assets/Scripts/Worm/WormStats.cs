@@ -18,7 +18,7 @@ public class WormStats : MonoBehaviour
     
     public void TakeDamage( float damageAmount )
     {
-        Debug.Log( "Enemy taking damage!" );
+        //Debug.Log( "Enemy taking damage!" );
         health -= damageAmount;
         if( health <= 0 )
             Die( );

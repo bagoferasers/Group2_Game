@@ -29,11 +29,13 @@ public class PauseMenu : MonoBehaviour
         if(active){
             if(menu == pauseMenu || instructionText){
                 Time.timeScale = 1;
+                //Time.fixedDeltaTime = 0.02f;
             }
             CloseMenu(menu);
         } else {
             OpenMenu(menu);
             Time.timeScale = 0;
+            //Time.fixedDeltaTime = 0;
         }
     }
 
