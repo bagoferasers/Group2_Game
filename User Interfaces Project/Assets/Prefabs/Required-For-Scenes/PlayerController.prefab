@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 1}
+  m_LocalScale: {x: 0.035, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1101636612589836994}
@@ -55,10 +55,10 @@ MonoBehaviour:
   entityManager: {fileID: 7120526174628026839}
   bulletShoot: {fileID: 3552337162309226156}
   bullet: {fileID: 2973887822767218495, guid: 37158e9930933694cb02c702de17de5b, type: 3}
-  damage: 10
+  damage: 20
   fireRate: 5
-  health: 150
-  maxHealth: 150
+  health: 200
+  maxHealth: 200
   oxygenBar: {fileID: 0}
   playerMovement: {fileID: 9050474387782763909}
   saveData: {fileID: 0}

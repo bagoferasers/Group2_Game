@@ -76,8 +76,8 @@ public class SceneTransition : MonoBehaviour
         if (!isPressed)
         {
             isPressed = true;
-            // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            SceneManager.LoadScene( "1.1" );
+            data.SavePlayerData(data.levels_unlocked, 1);
+            SceneManager.LoadScene( "Level 1" );
         }
     }
 

@@ -183,12 +183,12 @@ MonoBehaviour:
   entityManager: {fileID: 5650240837811406719}
   bulletShoot: {fileID: 5122851741920488807}
   bullet: {fileID: 2973887822767218495, guid: bcf38369f7f09474a9cd25f13c256f98, type: 3}
-  damage: 10
+  damage: 7
   fireRate: 3
   health: 50
   maxHealth: 50
   target: {fileID: 0}
-  aggroRange: 1
+  aggroRange: 1.25
   turnSpeed: 180
 --- !u!114 &7797848258342285104
 MonoBehaviour:
@@ -203,9 +203,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settings: {fileID: 2128279531602911110}
-  spacingBuffer: 0.2
+  spacingBuffer: 0.75
   gridSize: 0.5
-  speed: 0.006
+  speed: 0.02
   obstacles:
     serializedVersion: 2
     m_Bits: 8
@@ -228,6 +228,7 @@ MonoBehaviour:
   playerDeath:
     m_PersistentCalls:
       m_Calls: []
+  levelWin: {fileID: 0}
 --- !u!114 &4714549846373207913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,7 +272,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -4462156666113038485, guid: 64c4e864fb32dee47b544b37e91da574, type: 2}
   m_audioClip: {fileID: 8300000, guid: c28663e46c938b74c8d63705827f1534, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.25
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0

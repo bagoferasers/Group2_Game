@@ -12,11 +12,12 @@ public class LevelTracker : MonoBehaviour
 
     void Start()
     {
-        data.SavePlayerData(data.levels_unlocked, 3);
-
         int levelCount = data.LoadPlayerData_int(data.levels_unlocked);
-        levelCount = levelCount <= 5 ? levelCount : 5;
-        data.SavePlayerData(data.levels_unlocked, levelCount);
+        if(levelCount > 5){
+            levelCount = 5;
+            data.SavePlayerData(data.levels_unlocked, levelCount);
+        }
+        //Debug.Log(data.LoadPlayerData_int(data.levels_unlocked));
 
         if(buttons.Length > 0){
             for(int i = 1; i < buttons.Length; i++){
@@ -29,11 +30,5 @@ public class LevelTracker : MonoBehaviour
                 buttons[i].interactable = true;
             }
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

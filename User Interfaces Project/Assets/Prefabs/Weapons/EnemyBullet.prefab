@@ -174,5 +174,5 @@ MonoBehaviour:
   body: {fileID: 2066193914417026244}
   hitbox: {fileID: 7338512482905377820}
   damage: 10
-  speed: 0.1
-  lifeSpan: 2
+  speed: 0.05
+  lifeSpan: 5

@@ -19,6 +19,7 @@ public class EntityManager : MonoBehaviour
 
 
     void Awake(){
+        //Debug.Log(gameObject);
         levelWin.totalEnemies++;
     }
     /// <summary>

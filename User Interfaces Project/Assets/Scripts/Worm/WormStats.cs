@@ -13,6 +13,7 @@ public class WormStats : MonoBehaviour
     {
         healthBar = GetComponentInChildren< FloatingHealthBar >( );
         levelWin.totalEnemies++;
+        //Debug.Log(gameObject);
     }
     
     public void TakeDamage( float damageAmount )

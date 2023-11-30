@@ -16,7 +16,7 @@ public class Settings : MonoBehaviour
     [SerializeField] Toggle toggle;
     Resolution[] resolutions;
 
-    void Start(){
+    void Awake(){
         //Audio
         if(PlayerPrefs.GetInt("Default Volume Changed") == 0){
             masterSlider.value = .1f;
@@ -34,7 +34,7 @@ public class Settings : MonoBehaviour
         bool setDefault = false;
         if(PlayerPrefs.GetInt("set default resolution") == 0){
             setDefault = true;
-            PlayerPrefs.GetInt("set default resolution",1);
+            PlayerPrefs.SetInt("set default resolution",1);
         }
 
         for(int i = 0; i<resolutions.Length; i++){

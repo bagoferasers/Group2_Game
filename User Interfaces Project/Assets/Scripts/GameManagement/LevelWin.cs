@@ -7,13 +7,11 @@ public class LevelWin : MonoBehaviour
 {
     [SerializeField] UnityEvent win;
     [SerializeField] SaveData data;
-    [SerializeField] public int totalEnemies;
+    [SerializeField] public int totalEnemies = -1;
 
     bool winState = false;
 
-    void Start(){
-        totalEnemies--;
-    }
+    
 
     void Update(){
         if(totalEnemies == 0 && !winState){

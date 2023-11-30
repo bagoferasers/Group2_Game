@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class SaveData : MonoBehaviour
 {
-    public string player_health = "player_health";
     public string levels_unlocked = "levels_unlocked";
 
 

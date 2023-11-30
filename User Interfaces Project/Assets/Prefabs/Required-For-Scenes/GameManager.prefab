@@ -76,7 +76,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   data: {fileID: -6218203968372082346}
-  totalEnemies: 0
+  totalEnemies: -1
 --- !u!114 &-6218203968372082346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,7 +89,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3266578ba4ae9024ca594519910ff850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player_health: player_health
   levels_unlocked: levels_unlocked
 --- !u!82 &5557443516068550121
 AudioSource:

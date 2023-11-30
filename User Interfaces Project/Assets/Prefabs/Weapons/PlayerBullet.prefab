@@ -177,7 +177,7 @@ MonoBehaviour:
   hitbox: {fileID: 7338512482905377820}
   damage: 10
   speed: 0.15
-  lifeSpan: 2
+  lifeSpan: 0.75
 --- !u!114 &6031664058868329632
 MonoBehaviour:
   m_ObjectHideFlags: 0

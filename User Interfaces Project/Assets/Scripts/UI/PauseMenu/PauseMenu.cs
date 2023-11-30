@@ -27,10 +27,10 @@ public class PauseMenu : MonoBehaviour
     public void ToggleMenu(GameObject menu){
         bool active = menu.activeSelf;
         if(active){
-            CloseMenu(menu);
             if(menu == pauseMenu || instructionText){
                 Time.timeScale = 1;
             }
+            CloseMenu(menu);
         } else {
             OpenMenu(menu);
             Time.timeScale = 0;

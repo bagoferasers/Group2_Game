@@ -15,14 +15,4 @@ public class PlayerSettings : EntitySettings
     public float breathSeconds = 180f;
     public int drownDamage = 5;
     public float drownRate = 1f;
-
-    void Start(){
-        int savedHealth = saveData.LoadPlayerData_int(saveData.player_health);
-
-        if(savedHealth <= 0){
-            saveData.SavePlayerData(saveData.player_health, health);
-        } else {
-            health = savedHealth;
-        }
-    }
 }
