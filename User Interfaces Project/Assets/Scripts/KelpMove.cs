@@ -32,7 +32,7 @@ public class KelpMove : MonoBehaviour
         if ( other.CompareTag( "Player" ) )
         {
             // Player has moved through the kelp. You can add your custom logic here.
-            Debug.Log( "Player moved into the kelp!" );
+            // Debug.Log( "Player moved into the kelp!" );
             showLight( time );
         }
     }
