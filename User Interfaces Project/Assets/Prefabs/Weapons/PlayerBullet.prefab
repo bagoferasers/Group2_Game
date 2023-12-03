@@ -175,9 +175,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 2066193914417026244}
   hitbox: {fileID: 7338512482905377820}
-  damage: 1
-  speed: 0.025
-  lifeSpan: 2
+  damage: 10
+  speed: 0.15
+  lifeSpan: 0.75
 --- !u!114 &6031664058868329632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,8 +212,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 1
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0010499954, y: 0.0039000213, z: 0}
-    m_Extent: {x: 1.00455, y: 0.9986, z: 0}
+    m_Center: {x: 0.0010000169, y: -0.004700005, z: 0}
+    m_Extent: {x: 0.9984, y: 1.0051, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -245,7 +245,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7734939681838796948
 Transform:
   m_ObjectHideFlags: 0

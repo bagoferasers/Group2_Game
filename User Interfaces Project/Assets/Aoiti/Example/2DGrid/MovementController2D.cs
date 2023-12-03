@@ -60,7 +60,6 @@ using Aoiti.Pathfinding; //import the pathfinding library
 
 public class MovementController2D : MonoBehaviour
 {
-    [SerializeField] EnemySettings settings;
     [Header("Navigator options")]
     [SerializeField] float gridSize = 0.5f; //increase patience or gridSize for larger maps
     [SerializeField] float speed = 0.05f; //increase for faster movement
@@ -86,8 +85,9 @@ public class MovementController2D : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GetDistance(transform.position, settings.target.position) <= settings.aggroRange * settings.aggroRange){
-            GetMoveCommand(settings.target.position);
+        if (Input.GetMouseButtonDown(0)) //check for a new target
+        {
+            GetMoveCommand(Camera.main.ScreenToWorldPoint(Input.mousePosition));
         }
 
         if (pathLeftToGo.Count > 0) //if the target is not yet reached

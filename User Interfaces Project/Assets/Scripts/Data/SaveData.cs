@@ -4,9 +4,17 @@ using UnityEngine;
 
 public class SaveData : MonoBehaviour
 {
-    public string player_health = "player_health";
+    public string levels_unlocked = "levels_unlocked";
 
 
+
+    void Start(){
+        int levels = LoadPlayerData_int(levels_unlocked);
+
+        if(levels <= 0){
+            SavePlayerData(levels_unlocked, 1);
+        }
+    }
 
     public void SavePlayerData(string key, int value){
         PlayerPrefs.SetInt(key, value);

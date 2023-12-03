@@ -4950,7 +4950,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 846317800751605682}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.79381204, y: -1.2574964, z: 0.0006989777}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4971,6 +4971,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23bbf82142437ee479ea08e56b3ec55d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelWin: {fileID: 0}
   healthBar: {fileID: 6038256357160261430}
   maxHealth: 100
   health: 100
@@ -5489,7 +5490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  smoothSpeed: 0.1
+  smoothSpeed: 0.3
   rotating: 1
   gameObjects:
   - {fileID: 3228905441219192381}
@@ -5497,7 +5498,7 @@ MonoBehaviour:
   - {fileID: 4951924472319347940}
   - {fileID: 8077753989636881049}
   - {fileID: 2372014611007428913}
-  speed: 50
+  speed: 40
 --- !u!58 &2550351733274927084
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10542,6 +10543,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wormStats: {fileID: 7924476730234016163}
+  settings: {fileID: 0}
+  entityManager: {fileID: 0}
+  floatingHealthBar: {fileID: 0}
 --- !u!1 &3586897456502876932
 GameObject:
   m_ObjectHideFlags: 0
@@ -10644,8 +10648,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0041000247, y: 0.0040500164, z: 0}
-    m_Extent: {x: 0.602, y: 0.60485, z: 0}
+    m_Center: {x: -0.0035000145, y: -0.006099999, z: 0}
+    m_Extent: {x: 0.60580003, y: 0.6005, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -25841,8 +25845,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.004099995, y: 0.0027999878, z: 0}
-    m_Extent: {x: 0.60539997, y: 0.6042, z: 0}
+    m_Center: {x: 0.0033000112, y: -0.00044998527, z: 0}
+    m_Extent: {x: 0.6053, y: 0.59965, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

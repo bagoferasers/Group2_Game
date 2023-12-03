@@ -5,6 +5,7 @@ using UnityEngine;
 public class EntitySettings : MonoBehaviour
 {
     [Header("Object Assignments")]
+    public FloatingHealthBar healthBar;
     public Rigidbody2D body;
     public Transform sprite;
     public EntityManager entityManager;
