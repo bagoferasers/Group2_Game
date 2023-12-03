@@ -17,14 +17,4 @@ public class PlayerSettings : EntitySettings
     public float drownRate = 1f;
     [Header("Parts")]
     public int partsCollected = 0;
-
-    void Start(){
-        int savedHealth = saveData.LoadPlayerData_int(saveData.player_health);
-
-        if(savedHealth <= 0){
-            saveData.SavePlayerData(saveData.player_health, health);
-        } else {
-            health = savedHealth;
-        }
-    }
 }

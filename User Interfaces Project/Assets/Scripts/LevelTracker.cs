@@ -17,7 +17,7 @@ public class LevelTracker : MonoBehaviour
             levelCount = 5;
             data.SavePlayerData(data.levels_unlocked, levelCount);
         }
-        //Debug.Log(data.LoadPlayerData_int(data.levels_unlocked));
+        Debug.Log(data.LoadPlayerData_int(data.levels_unlocked));
 
         if(buttons.Length > 0){
             for(int i = 1; i < buttons.Length; i++){
