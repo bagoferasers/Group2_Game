@@ -12076,6 +12076,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1107835260142283845, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.294415
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107835260142283845, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1878756
+      objectReference: {fileID: 0}
     - target: {fileID: 1138945339201601512, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -12144,6 +12152,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2586499622493170792, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 905323daa72fdcd4dbb99749822e5ad6, type: 3}
     - target: {fileID: 3487179106347988998, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

@@ -3306,6 +3306,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2586499622493170792, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e33acc99088f39b4b89f7d084ac70cc9, type: 3}
     - target: {fileID: 3159635648563986178, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0.943
