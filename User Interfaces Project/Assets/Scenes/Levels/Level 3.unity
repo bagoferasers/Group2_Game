@@ -1289,6 +1289,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2389a765f62f224781ec5c537df1801, type: 3}
+--- !u!1001 &273448786
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6446438457937999840, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
+      propertyPath: m_Name
+      value: ShipPart
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267931101344401864, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.9771752
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267931101344401864, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.775068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267931101344401864, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267931101344401864, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267931101344401864, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267931101344401864, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267931101344401864, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267931101344401864, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267931101344401864, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267931101344401864, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
 --- !u!224 &276350720 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1966489755454958319, guid: 6cc5d710e6435ca41890d82d1d852fc4, type: 3}
@@ -2004,6 +2061,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 185953371572349391, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1107835260142283845, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.2662685
@@ -2011,6 +2072,10 @@ PrefabInstance:
     - target: {fileID: 1107835260142283845, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.8307899
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138945339201601512, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1305953551112248898, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -2064,11 +2129,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2125219879251567609, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2234396471975416850, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2234396471975416850, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3487179106347988998, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
@@ -2080,6 +2153,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Required-For-Scene
       objectReference: {fileID: 0}
+    - target: {fileID: 4325650708756959093, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 374792805}
+    - target: {fileID: 4325650708756959093, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
+      propertyPath: win.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5883492021149630186, guid: 6328e5fcf567eec4bb848ad35324bf3f, type: 3}
+    - target: {fileID: 4325650708756959093, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
+      propertyPath: win.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 374792804}
     - target: {fileID: 4403994607012727146, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.3685849
@@ -2110,16 +2195,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6693291026802995586, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
       propertyPath: m_Text
-      value: 'Kill all the enemies before you run out of oxygen to complete the level!
+      value: 'Find the missing Ship Part before you run out of oxygen to complete
+        the level!
 
 
-        You
-        will encounter more challenging groups of enemies here. Consider approaching
-        from different angles.'
+        You will encounter more challenging groups of enemies
+        here. Consider approaching from different angles.'
       objectReference: {fileID: 0}
     - target: {fileID: 6957444982365610847, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
       propertyPath: playerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Level 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610483371912237232, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7815612652757530347, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2128,6 +2217,10 @@ PrefabInstance:
     - target: {fileID: 7815612652757530347, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.797
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956295924239674151, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2165,6 +2258,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5532baf02a9ae4944907da9a73a01ea1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &374792804 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4532045345426502969, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
+  m_PrefabInstance: {fileID: 374792800}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &374792805 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5148061543206912215, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
+  m_PrefabInstance: {fileID: 374792800}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3266578ba4ae9024ca594519910ff850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &392585182
@@ -5069,7 +5178,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5195633309231991968, guid: 4f23f883fdb77a542a1b4fc7797abeb9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.736943
+      value: -1.488
       objectReference: {fileID: 0}
     - target: {fileID: 5195633309231991968, guid: 4f23f883fdb77a542a1b4fc7797abeb9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12302,3 +12411,4 @@ SceneRoots:
   - {fileID: 1943524423}
   - {fileID: 320772823}
   - {fileID: 13680454}
+  - {fileID: 273448786}

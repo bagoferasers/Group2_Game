@@ -5,14 +5,14 @@ using UnityEngine.UI;
 
 public class WormStats : MonoBehaviour
 {
-    [SerializeField] LevelWin levelWin;
+    //[SerializeField] LevelWin levelWin;
     [SerializeField] private FloatingHealthBar healthBar;
     public float maxHealth = 10.0f;
     public float health = 10.0f;
     private void Awake( ) 
     {
         healthBar = GetComponentInChildren< FloatingHealthBar >( );
-        levelWin.totalEnemies++;
+        //levelWin.totalEnemies++;
         //Debug.Log(gameObject);
     }
     
@@ -27,7 +27,7 @@ public class WormStats : MonoBehaviour
 
     public void Die( )
     {
-        levelWin.totalEnemies--;
+        //levelWin.totalEnemies--;
         Destroy( this.gameObject );
     }
 }

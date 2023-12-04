@@ -3318,6 +3318,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Required-For-Scene
       objectReference: {fileID: 0}
+    - target: {fileID: 4325650708756959093, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 599943982}
+    - target: {fileID: 4325650708756959093, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
+      propertyPath: win.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5883492021149630186, guid: 6328e5fcf567eec4bb848ad35324bf3f, type: 3}
+    - target: {fileID: 4325650708756959093, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
+      propertyPath: win.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 599943983}
     - target: {fileID: 4403994607012727146, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.47241515
@@ -3388,11 +3400,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6693291026802995586, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
       propertyPath: m_Text
-      value: 'Kill all the enemies before you run out of oxygen to complete the level!
+      value: 'Find the missing Ship Part before you run out of oxygen to complete
+        the level!
 
 
-        Good
-        luck.'
+        Good luck.'
       objectReference: {fileID: 0}
     - target: {fileID: 6957444982365610847, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
       propertyPath: playerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
@@ -3453,6 +3465,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7737e01b2f84114587f3589f0319ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &599943982 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5148061543206912215, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
+  m_PrefabInstance: {fileID: 599943978}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3266578ba4ae9024ca594519910ff850, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &599943983 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4532045345426502969, guid: 9e712a864fa5a124c828443d9244cf04, type: 3}
+  m_PrefabInstance: {fileID: 599943978}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &611965436
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4048,6 +4076,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2389a765f62f224781ec5c537df1801, type: 3}
+--- !u!1001 &732275539
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6446438457937999840, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
+      propertyPath: m_Name
+      value: ShipPart
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267931101344401864, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.035165
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267931101344401864, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.251955
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267931101344401864, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267931101344401864, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267931101344401864, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267931101344401864, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267931101344401864, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267931101344401864, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267931101344401864, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267931101344401864, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
 --- !u!1001 &739271538
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10573,3 +10658,4 @@ SceneRoots:
   - {fileID: 954551940}
   - {fileID: 1979515988}
   - {fileID: 97679036}
+  - {fileID: 732275539}

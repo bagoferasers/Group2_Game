@@ -66,6 +66,7 @@ MonoBehaviour:
   breathSeconds: 180
   drownDamage: 5
   drownRate: 1
+  partsCollected: 0
 --- !u!114 &4337873906575685417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,6 +219,7 @@ GameObject:
   - component: {fileID: 7120526174628026839}
   - component: {fileID: 6321162596683408247}
   - component: {fileID: 5928237045716721257}
+  - component: {fileID: 4493242140717676029}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -392,7 +394,6 @@ MonoBehaviour:
           m_StringArgument: Level 1
           m_BoolArgument: 0
         m_CallState: 2
-  levelWin: {fileID: 0}
 --- !u!114 &6321162596683408247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -456,3 +457,31 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &4493242140717676029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5260638263255306792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 886aacdd92e36ae4d908279916ed2e3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 0}
+  win:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: ToggleMenu
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

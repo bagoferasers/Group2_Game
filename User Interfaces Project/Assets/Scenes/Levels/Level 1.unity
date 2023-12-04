@@ -435,8 +435,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0060499907, y: -0.0029000044, z: 0}
-    m_Extent: {x: 1.50375, y: 1.497, z: 0}
+    m_Center: {x: -0.0012000203, y: -0.0016499758, z: 0}
+    m_Extent: {x: 1.5046, y: 1.50605, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -4832,8 +4832,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0021000504, y: 0.009000003, z: 0}
-    m_Extent: {x: 1.5067999, y: 1.4995999, z: 0}
+    m_Center: {x: -0.00059998035, y: -0.0016499758, z: 0}
+    m_Extent: {x: 1.503, y: 1.50405, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -6887,6 +6887,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2126181014}
     m_Modifications:
+    - target: {fileID: 1614996926081166259, guid: 6328e5fcf567eec4bb848ad35324bf3f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2637365921860582010, guid: 6328e5fcf567eec4bb848ad35324bf3f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2662937458045986135, guid: 6328e5fcf567eec4bb848ad35324bf3f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3009307312336792669, guid: 6328e5fcf567eec4bb848ad35324bf3f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3251377863572336853, guid: 6328e5fcf567eec4bb848ad35324bf3f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -6919,6 +6935,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4283805012984868940, guid: 6328e5fcf567eec4bb848ad35324bf3f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4487079753915326326, guid: 6328e5fcf567eec4bb848ad35324bf3f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -6927,6 +6947,10 @@ PrefabInstance:
       propertyPath: levelWin
       value: 
       objectReference: {fileID: 547969291}
+    - target: {fileID: 5217170799123953810, guid: 6328e5fcf567eec4bb848ad35324bf3f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5439645312106759090, guid: 6328e5fcf567eec4bb848ad35324bf3f, type: 3}
       propertyPath: m_Camera
       value: 
@@ -6934,6 +6958,10 @@ PrefabInstance:
     - target: {fileID: 5471010085864707971, guid: 6328e5fcf567eec4bb848ad35324bf3f, type: 3}
       propertyPath: m_Name
       value: UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 5733279704853234437, guid: 6328e5fcf567eec4bb848ad35324bf3f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7446513116662293321, guid: 6328e5fcf567eec4bb848ad35324bf3f, type: 3}
       propertyPath: m_AnchorMax.x
@@ -6949,11 +6977,12 @@ PrefabInstance:
       objectReference: {fileID: 1789879354}
     - target: {fileID: 8858076306538340919, guid: 6328e5fcf567eec4bb848ad35324bf3f, type: 3}
       propertyPath: m_Text
-      value: 'Kill all the enemies before you run out of oxygen to complete the level!
+      value: 'Find the missing Ship Part before you run out of oxygen to complete
+        the level!
 
 
-        Use
-        WASD to move and Left Click to shoot.'
+        Use WASD to move, Left Click to shoot, and ESC to open
+        the menu.'
       objectReference: {fileID: 0}
     - target: {fileID: 9022620532336708681, guid: 6328e5fcf567eec4bb848ad35324bf3f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13920,8 +13949,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0024999976, y: 0.004049957, z: 0}
-    m_Extent: {x: 1.506, y: 1.5014501, z: 0}
+    m_Center: {x: 0.0040500164, y: 0.005100012, z: 0}
+    m_Extent: {x: 1.49745, y: 1.5, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -14463,8 +14492,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0010499954, y: -0.00059998035, z: 0}
-    m_Extent: {x: 1.50305, y: 1.5074, z: 0}
+    m_Center: {x: -0.0016000271, y: -0.006499946, z: 0}
+    m_Extent: {x: 1.4984, y: 1.5025, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -14484,6 +14513,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1985321029342935236, guid: a5cb0bfe9ef1b4b42a412893376c0701, type: 3}
   m_PrefabInstance: {fileID: 3644305710658458941}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1180971773
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6446438457937999840, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
+      propertyPath: m_Name
+      value: ShipPart
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267931101344401864, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267931101344401864, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267931101344401864, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.744
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267931101344401864, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.279
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267931101344401864, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267931101344401864, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267931101344401864, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267931101344401864, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267931101344401864, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267931101344401864, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267931101344401864, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267931101344401864, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e003823d35a96cf42a67c1d26f574d49, type: 3}
 --- !u!114 &1191711055 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6567532975707294258, guid: 6328e5fcf567eec4bb848ad35324bf3f, type: 3}
@@ -22923,8 +23017,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.00059998035, y: 0.007099986, z: 0}
-    m_Extent: {x: 1.5085, y: 1.4995, z: 0}
+    m_Center: {x: -0.0046499968, y: -0.0026000142, z: 0}
+    m_Extent: {x: 1.49685, y: 1.5032, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -23290,10 +23384,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerController
       objectReference: {fileID: 0}
-    - target: {fileID: 2773567381167789644, guid: d16f078a9ad23ed48b49edd9899d133e, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
+    - target: {fileID: 4493242140717676029, guid: d16f078a9ad23ed48b49edd9899d133e, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 547969292}
+    - target: {fileID: 4493242140717676029, guid: d16f078a9ad23ed48b49edd9899d133e, type: 3}
+      propertyPath: win.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1751639521}
+    - target: {fileID: 4493242140717676029, guid: d16f078a9ad23ed48b49edd9899d133e, type: 3}
+      propertyPath: win.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2096324419}
     - target: {fileID: 6060195311955056468, guid: d16f078a9ad23ed48b49edd9899d133e, type: 3}
       propertyPath: saveData
       value: 
@@ -23306,10 +23408,6 @@ PrefabInstance:
       propertyPath: oxygenBar
       value: 
       objectReference: {fileID: 839645773}
-    - target: {fileID: 7120526174628026839, guid: d16f078a9ad23ed48b49edd9899d133e, type: 3}
-      propertyPath: levelWin
-      value: 
-      objectReference: {fileID: 547969291}
     - target: {fileID: 7120526174628026839, guid: d16f078a9ad23ed48b49edd9899d133e, type: 3}
       propertyPath: playerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -24705,8 +24803,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0015000105, y: -0.0033999681, z: 0}
-    m_Extent: {x: 1.5077, y: 1.5044, z: 0}
+    m_Center: {x: 0.00029999018, y: 0.00395, z: 0}
+    m_Extent: {x: 1.5049, y: 1.50555, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -29638,3 +29736,4 @@ SceneRoots:
   m_Roots:
   - {fileID: 2034354411}
   - {fileID: 2126181014}
+  - {fileID: 1180971773}

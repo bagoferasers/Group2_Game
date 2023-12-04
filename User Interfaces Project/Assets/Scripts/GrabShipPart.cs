@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 /// <summary>
 /// Handles the interaction between the player and a ship part.
@@ -12,7 +13,8 @@ using UnityEngine;
 public class GrabShipPart : MonoBehaviour
 {
 
-    [SerializeField] PlayerSettings settings;
+    [SerializeField] SaveData data;
+    [SerializeField] UnityEvent win;
 
     // Start is called before the first frame update
     void Start()
@@ -30,8 +32,9 @@ public class GrabShipPart : MonoBehaviour
     {
         if(other.CompareTag("ShipPart"))
         {
-            Debug.Log("Gathered part");
-            settings.partsCollected = settings.partsCollected + 1;
+            //Debug.Log("Gathered part");
+            data.SavePlayerData(data.levels_unlocked, data.LoadPlayerData_int(data.levels_unlocked) + 1);
+            win.Invoke();
             Destroy(other.gameObject);
         }
     }
